@@ -1,0 +1,3 @@
+case,symbols,adaptive_only_errors,frozen_only_errors,absolute_ser_reduction_frozen_minus_adaptive,exact_p_for_equal_discordant_counts
+constant_gain,300000,239,223,-5.333333333333333e-05,0.48530341225698365
+slow_gain_ramp,300000,162,1018,0.002853333333333333,4.795209869521233e-152

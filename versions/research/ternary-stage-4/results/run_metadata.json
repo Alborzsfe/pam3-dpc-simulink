@@ -1,0 +1,29 @@
+{
+  "paper": "Song and Kam, arXiv:1505.02536v1, Eqs. (2), (3), (11), (13), Fig. 3b",
+  "source": "https://arxiv.org/pdf/1505.02536",
+  "seed": 20260928,
+  "quick": false,
+  "original_symbols_per_power": 1024000,
+  "ternary_symbols_per_case": 300000,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "matplotlib": "3.10.8",
+  "explicit_assumptions": [
+    "Initial Lm pilots are all the highest level; the article does not give their exact composition.",
+    "Turbulence is product of independent unit-mean gamma variables.",
+    "Pointing error is sampled from Eq. (24) and the product is normalized to E[h]=1.",
+    "Independent runs of 1000 data symbols each (shorter than Lc=10000); fresh pilot per run. Not one receiver surviving gain jumps.",
+    "Eight independent scrambled Sobol replicates balance rare fades; the 95% intervals are approximate across the eight replicate rates.",
+    "Identical fading, symbols and Gaussian noise at each power point reduce differences caused by Monte Carlo randomness.",
+    "4-PAM symbol mapping is binary-reflected Gray: 0:00,1:01,2:11,3:10.",
+    "Pilot overhead excluded from article-style BEP; pilot count separately recorded.",
+    "No paper curve points are digitized; plotted Genie reference uses our stated channel normalization."
+  ],
+  "checks": {
+    "noiseless_m3_m4": true,
+    "causal_future_invariance": true,
+    "awgn_oracle_simulation_bep": 0.11117,
+    "awgn_oracle_normal_cdf_bep": 0.11203183196781893
+  }
+}
