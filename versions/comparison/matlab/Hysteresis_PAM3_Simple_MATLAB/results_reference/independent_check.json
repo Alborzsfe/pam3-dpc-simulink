@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "same_input_adc_samples_checked": 24960,
+  "output_samples_checked": 49920,
+  "original_pam3_raw_filtered_symbols_and_indices_match": true,
+  "independent_projection_metric_max_abs_error": 2.5405455517102382e-11,
+  "matlab_executed": false,
+  "runtime_product": "GNU Octave",
+  "simulink_executed": false
+}
