@@ -1,0 +1,42 @@
+{
+  "native_MATLAB_Simulink_executed": false,
+  "source_model_sha256": "10615c2f27df563b9018832be180a8c1a9f56628479a68c0d43668c7325d08c7",
+  "original_controller_templates_unchanged": true,
+  "dependency_check": "all project MATLAB dependencies resolved",
+  "logging_check": "all raw labels have logger sources",
+  "waveform_fixtures": [
+    {
+      "target": 0,
+      "reconstructed_thd": [
+        1.60808161603704e-17,
+        3.2774980326799044e-17,
+        3.672868966907556e-17
+      ]
+    },
+    {
+      "target": 0.03,
+      "reconstructed_thd": [
+        0.02999999999999999,
+        0.029999999999999985,
+        0.03000000000000001
+      ]
+    },
+    {
+      "target": 0.05,
+      "reconstructed_thd": [
+        0.04999999999999999,
+        0.049999999999999975,
+        0.05000000000000002
+      ]
+    }
+  ],
+  "baseline_band_scaling_reference_passed": true,
+  "effective_boundary_algebra_reference_passed": true,
+  "native_tests_supplied": [
+    "VALIDATE_RESEARCH_STAGE2",
+    "SMOKE_TEST_RESEARCH_STAGE2"
+  ],
+  "native_tests_execution": "pending on user MATLAB",
+  "not_a_converter_performance_validation": true,
+  "syntax_check": "40 MATLAB files, including rendered diagnostic and source charts; MISS_HIT MATLAB 2022a grammar: no errors"
+}

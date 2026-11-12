@@ -1,0 +1,43 @@
+{
+  "native_MATLAB_Simulink_executed": false,
+  "syntax": "29 rendered MATLAB files, MISS_HIT MATLAB 2022a grammar, no errors",
+  "noise_reference_ticks": 12000,
+  "mean_noise_V": -0.0010717209060158994,
+  "std_noise_V": 0.50324387295194,
+  "mean_noise_A": 0.00010278620628847017,
+  "std_noise_A": 0.05014755130171282,
+  "first_tick_noise_V_then_A": [
+    -0.12990775844082236,
+    0.29403442377224565,
+    -0.15909346332773566,
+    -0.07952108727768065,
+    0.00656373342499137,
+    -0.06306377621367575
+  ],
+  "repeated_stream_exact": true,
+  "scenario_pairs": [
+    [
+      20000,
+      0.01
+    ],
+    [
+      20000,
+      0.015
+    ],
+    [
+      40000,
+      0.01
+    ],
+    [
+      40000,
+      0.015
+    ]
+  ],
+  "sensor_noise_std_per_phase": [
+    0.5,
+    0.05
+  ],
+  "power_noise_injection_disabled": true,
+  "comparable_switching_tolerance_fraction": 0.05,
+  "automatic_switching_frequency_matching": false
+}

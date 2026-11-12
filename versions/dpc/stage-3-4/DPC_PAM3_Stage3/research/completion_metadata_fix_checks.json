@@ -1,0 +1,11 @@
+{
+  "native_MATLAB_Simulink_executed": false,
+  "regression_trigger": "ExecutionInfo does not contain StopEventTime",
+  "compatibility_logic": "Require ReachedStopTime, use available optional clock fields and independently verify periodic logs",
+  "changed_MATLAB_files_lint": "MISS_HIT: 5 files, no issues",
+  "source_model_and_controller_templates_unchanged": true,
+  "log_coverage_and_resampling_rules_unchanged": true,
+  "native_fixture_provided_not_executed": "VALIDATE_PAM3_COMPLETION",
+  "native_logging_smoke_provided_not_executed": "SMOKE_TEST_STAGE4_LOGGING",
+  "performance_results_generated": false
+}

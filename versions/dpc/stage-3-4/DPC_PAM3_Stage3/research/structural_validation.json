@@ -1,0 +1,10 @@
+{
+  "plant_changed": false,
+  "sector_and_switching_policy_verbatim_all_variants": true,
+  "changed_SLX_parts": [
+    "simulink/stateflow/chart_25.xml"
+  ],
+  "source_sha256": "10615c2f27df563b9018832be180a8c1a9f56628479a68c0d43668c7325d08c7",
+  "Simulink_run_here": false,
+  "note": "Controller templates checked; final comparison models are generated and compiled by MATLAB, not shipped as uncompiled patched models."
+}

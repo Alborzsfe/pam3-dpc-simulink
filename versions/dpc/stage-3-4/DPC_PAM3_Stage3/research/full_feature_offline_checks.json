@@ -1,0 +1,11 @@
+{
+  "native_MATLAB_Simulink_executed": false,
+  "offline_reference_only": true,
+  "disabled_reference_decisions": 100011,
+  "all_masks_and_multiple_sample_rates": true,
+  "frozen_old_controller_and_plant_hashes": true,
+  "same_sector_and_switching_suffix": true,
+  "adaptation_gate_persistence_fixtures": true,
+  "alloff_whole_controller_native_test": "provided, not executed",
+  "MATLAB_full_syntax_check": "not available in this environment"
+}
