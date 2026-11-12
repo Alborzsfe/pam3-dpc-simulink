@@ -1,0 +1,11 @@
+PASS MATLAB-language: 600 captures, 346100 samples, 30575 symbols.
+    passed = 1
+    quick = 0
+    captures_checked = 600
+    samples_checked = 346100
+    symbols_checked = 30575
+    elapsed_seconds = 116.18
+    runtime = 8.4.0
+    runtime_product = GNU Octave
+    matlab_executed = 0
+    simulink_executed = 0

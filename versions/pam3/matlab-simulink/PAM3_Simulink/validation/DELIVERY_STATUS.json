@@ -1,0 +1,38 @@
+{
+  "implementation": "Complete documented digital reconstruction of US11405248B2 in MATLAB-language functions and Level-2 MATLAB S-Functions",
+  "models": [
+    "models/pam3_patent_demo.slx",
+    "models/pam3_patent_blocks.slx"
+  ],
+  "model_authoring": "Structurally assembled OPC/XML containers, regenerate with official Simulink APIs using START_PAM3/build_pam3_models",
+  "verified": {
+    "matlab_syntax_lint": true,
+    "slx_zip_xml_relationships": true,
+    "m_files_executed_in": "GNU Octave 8.4.0",
+    "captures_checked": 600,
+    "real_sample_checks": 346100,
+    "symbols_checked": 30575,
+    "all_reference_comparisons_passed": true,
+    "host_packet_bytes_match_independent_fixture": true,
+    "empty_capture_host_packets": true,
+    "synthetic_source_and_evaluation": true,
+    "actual_core_demo_symbols_per_channel": [
+      514,
+      514
+    ]
+  },
+  "not_verified": {
+    "MATLAB_execution": true,
+    "Simulink_model_loading": true,
+    "Simulink_compilation": true,
+    "Simulink_solver_execution": true,
+    "physical_ADC_USB_FPGA": true
+  },
+  "pending_local_commands": [
+    "START_PAM3",
+    "validate_simulink",
+    "run_pam3_snr_tests(true)"
+  ],
+  "original_patent_ambiguities_retained": true,
+  "DPC_converter_modified": false
+}

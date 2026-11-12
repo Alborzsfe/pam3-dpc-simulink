@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "models": [
+    {
+      "file": "pam3_patent_blocks.slx",
+      "blocks": 2,
+      "connections": 0,
+      "zip_xml_relationships_passed": true
+    },
+    {
+      "file": "pam3_patent_demo.slx",
+      "blocks": 10,
+      "connections": 12,
+      "zip_xml_relationships_passed": true
+    }
+  ],
+  "matlab_loading_verified": false,
+  "simulink_execution_verified": false
+}

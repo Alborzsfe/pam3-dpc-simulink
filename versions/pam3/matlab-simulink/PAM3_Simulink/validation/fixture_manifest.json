@@ -1,0 +1,19 @@
+{
+  "reference": "Independent offline Python runs/edges/candidate lists",
+  "captures": 600,
+  "real_sample_exposures": 346100,
+  "expected_symbols": 30575,
+  "configurations": [
+    "fixed/DC-off",
+    "fixed/literal-DC",
+    "Q8/DC-off",
+    "Q8/literal-DC",
+    "float/DC-off"
+  ],
+  "rng_seeds": [
+    81871,
+    66183
+  ],
+  "matlab_executed": false,
+  "simulink_executed": false
+}

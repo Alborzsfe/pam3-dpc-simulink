@@ -1,0 +1,86 @@
+[
+  {
+    "model": "pam3_patent_demo",
+    "blocks": [
+      {
+        "sid": "1",
+        "name": "ADC_Master",
+        "kind": "FromWorkspace",
+        "ports": "[0, 1]"
+      },
+      {
+        "sid": "2",
+        "name": "ADC_Slave",
+        "kind": "FromWorkspace",
+        "ports": "[0, 1]"
+      },
+      {
+        "sid": "3",
+        "name": "Acquisition_Command",
+        "kind": "FromWorkspace",
+        "ports": "[0, 1]"
+      },
+      {
+        "sid": "4",
+        "name": "Master_Decoder",
+        "kind": "M-S-Function",
+        "ports": "[2, 1]"
+      },
+      {
+        "sid": "5",
+        "name": "Slave_Decoder",
+        "kind": "M-S-Function",
+        "ports": "[2, 1]"
+      },
+      {
+        "sid": "6",
+        "name": "Host_Record_Packer",
+        "kind": "M-S-Function",
+        "ports": "[3, 1]"
+      },
+      {
+        "sid": "7",
+        "name": "Master_Trace",
+        "kind": "ToWorkspace",
+        "ports": "[1, 0]"
+      },
+      {
+        "sid": "8",
+        "name": "Slave_Trace",
+        "kind": "ToWorkspace",
+        "ports": "[1, 0]"
+      },
+      {
+        "sid": "9",
+        "name": "Host_Records",
+        "kind": "ToWorkspace",
+        "ports": "[1, 0]"
+      },
+      {
+        "sid": "10",
+        "name": "ADC_Waveforms",
+        "kind": "Scope",
+        "ports": "[2]"
+      }
+    ],
+    "authoring": "OPC/XML structure; not saved or compiled in MATLAB"
+  },
+  {
+    "model": "pam3_patent_blocks",
+    "blocks": [
+      {
+        "sid": "1",
+        "name": "PAM3_Decoder",
+        "kind": "M-S-Function",
+        "ports": "[2, 1]"
+      },
+      {
+        "sid": "2",
+        "name": "Host_Record_Packer",
+        "kind": "M-S-Function",
+        "ports": "[3, 1]"
+      }
+    ],
+    "authoring": "OPC/XML structure; not saved or compiled in MATLAB"
+  }
+]
