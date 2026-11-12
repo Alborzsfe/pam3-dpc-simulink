@@ -1,0 +1,50 @@
+name: Import verified PAM3 DPC archive
+on:
+  push:
+    branches: [transfer/import-pam3]
+    paths: [.github/workflows/import-archive.yml]
+permissions:
+  contents: write
+jobs:
+  import:
+    if: github.repository == 'Alborzsfe/pam3-dpc-simulink'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Restore and push the verified branches
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          gh release download archive-bundle --repo "$GITHUB_REPOSITORY" --pattern pam3-dpc-simulink.bundle
+          gh auth setup-git --hostname github.com
+          bash -s -- "https://github.com/$GITHUB_REPOSITORY.git" "$RUNNER_TEMP/pam3-dpc-simulink.bundle" "$RUNNER_TEMP/import.git" <<'PAM3_IMPORT'
+          set -euo pipefail
+
+          remote=${1:?missing destination}
+          bundle=${2:?missing bundle}
+          workdir=${3:?missing working directory}
+          expected_bundle=fe714bad4474082abed76b866ccbfd9e7b39780711e86c71d71def7a7fe8b2ef
+          expected_source=632255b207c164060d264c1bd27254216bf0846b
+          expected_main=ac7b78ae07973800a868753371e192a32d63f411
+
+          printf '%s  %s\n' "$expected_bundle" "$bundle" | sha256sum --check -
+          git clone --bare "$bundle" "$workdir"
+          cd "$workdir"
+          test "$(git rev-parse refs/heads/main)" = "$expected_source"
+          test "$(git for-each-ref --format='%(refname)' refs/heads/archive/ | wc -l)" -eq 15
+          git fsck --full
+          git fetch --no-tags "$remote" refs/heads/main:refs/heads/github-initial
+          base=$(git rev-parse refs/heads/github-initial)
+          test "$base" = "$expected_main"
+          test -z "$(git ls-remote --heads "$remote" 'refs/heads/archive/*')"
+          tree=$(git rev-parse 'refs/heads/main^{tree}')
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          merged=$(git commit-tree "$tree" -p "$base" -p "$expected_source" -m 'Import the verified PAM3 and DPC archive')
+          git update-ref refs/heads/github-import "$merged"
+          mapfile -t archives < <(git for-each-ref --format='%(refname):%(refname)' refs/heads/archive/)
+          git push --atomic "$remote" refs/heads/github-import:refs/heads/main "${archives[@]}"
+          PAM3_IMPORT
