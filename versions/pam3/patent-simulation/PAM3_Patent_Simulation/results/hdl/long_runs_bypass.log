@@ -1,0 +1,2 @@
+PASS samples_per_channel=9251 dc=0 symbols_A=771 symbols_B=771
+/workspace/scratch/f9bc06d8d963/output/PAM3_Patent_Simulation/rtl/tb_dual.sv:68: $finish called at 97980000 (1ps)

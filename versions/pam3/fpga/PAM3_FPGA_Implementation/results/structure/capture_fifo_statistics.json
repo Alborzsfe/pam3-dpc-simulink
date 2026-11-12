@@ -1,0 +1,59 @@
+{
+   "creator": "Yosys 0.33 (git sha1 2584903a060)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\pam3_capture_fifo": {
+         "num_wires":         36,
+         "num_wire_bits":     972,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 340,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         30,
+         "num_cells_by_type": {
+            "$add": 4,
+            "$eq": 2,
+            "$logic_and": 3,
+            "$logic_not": 1,
+            "$logic_or": 1,
+            "$lt": 1,
+            "$mem_v2": 1,
+            "$mux": 6,
+            "$ne": 1,
+            "$pmux": 1,
+            "$reduce_and": 1,
+            "$reduce_bool": 2,
+            "$sdffe": 5,
+            "$sub": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         36,
+         "num_wire_bits":     972,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 340,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         30,
+         "num_cells_by_type": {
+            "$add": 4,
+            "$eq": 2,
+            "$logic_and": 3,
+            "$logic_not": 1,
+            "$logic_or": 1,
+            "$lt": 1,
+            "$mem_v2": 1,
+            "$mux": 6,
+            "$ne": 1,
+            "$pmux": 1,
+            "$reduce_and": 1,
+            "$reduce_bool": 2,
+            "$sdffe": 5,
+            "$sub": 1
+         }
+      }
+}
+

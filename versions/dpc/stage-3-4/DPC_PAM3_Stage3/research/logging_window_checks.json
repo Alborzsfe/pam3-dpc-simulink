@@ -1,0 +1,29 @@
+{
+  "native_MATLAB_Simulink_executed": false,
+  "numerical_fixtures_only": true,
+  "old_strict_endpoint_reproductions": 3,
+  "constant_and_signed_step_fixtures": [
+    "20000Hz_Q+0",
+    "20000Hz_Q+80",
+    "20000Hz_Q-80",
+    "40000Hz_Q+0",
+    "40000Hz_Q+80",
+    "40000Hz_Q-80",
+    "60000Hz_Q+0",
+    "60000Hz_Q+80",
+    "60000Hz_Q-80"
+  ],
+  "missing_start_end_internal_tick_rejected": true,
+  "unverified_constant_not_extended": true,
+  "no_future_or_next_tick_fabricated": true,
+  "roundoff_and_inclusive_endpoint_checked": true,
+  "changed_MATLAB_files_MISS_HIT_lint": "12 files passed",
+  "unrendered_templates_note": "__PLACEHOLDERS__ are replaced by BUILD before MATLAB parses templates",
+  "source_slx_sha256": "10615c2f27df563b9018832be180a8c1a9f56628479a68c0d43668c7325d08c7",
+  "controller_templates_and_experiment_configs_unchanged": true,
+  "native_regressions_provided_not_run": [
+    "VALIDATE_PAM3_LOGGING",
+    "SMOKE_TEST_STAGE4_LOGGING"
+  ],
+  "converter_performance_results": "not generated"
+}

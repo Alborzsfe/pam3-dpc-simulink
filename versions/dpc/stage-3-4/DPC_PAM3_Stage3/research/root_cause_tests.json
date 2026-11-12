@@ -1,0 +1,60 @@
+{
+  "constant_positive_start": {
+    "samples": 100,
+    "mismatch_raw_vs_hysteresis": 100,
+    "last_raw": 0,
+    "last_hysteresis": 1,
+    "raw_levels": [
+      0
+    ]
+  },
+  "constant_negative_start": {
+    "samples": 100,
+    "mismatch_raw_vs_hysteresis": 100,
+    "last_raw": 0,
+    "last_hysteresis": -1,
+    "raw_levels": [
+      0
+    ]
+  },
+  "positive_small_ripple": {
+    "samples": 110,
+    "mismatch_raw_vs_hysteresis": 49,
+    "last_raw": 1,
+    "last_hysteresis": 1,
+    "raw_levels": [
+      0,
+      1
+    ]
+  },
+  "falling_still_positive": {
+    "samples": 61,
+    "mismatch_raw_vs_hysteresis": 50,
+    "last_raw": 0,
+    "last_hysteresis": 1,
+    "raw_levels": [
+      0,
+      1
+    ]
+  },
+  "timing": {
+    "Ts_control_s": 2.5e-05,
+    "samples_per_symbol": 12,
+    "symbol_interval_s": 0.0003,
+    "pipeline_samples": 20,
+    "pipeline_delay_s": 0.0005,
+    "default_first_symbol_tick_zero_based": 26,
+    "sampling_rate_scale_from_800MHz": 20000
+  },
+  "adc": {
+    "offset": 117.5,
+    "gain": 2250,
+    "nominal_positive_pu": 0.01,
+    "nominal_negative_pu": -0.01,
+    "zero_plus_pu": 0.01888888888888889,
+    "zero_minus_pu": -0.016666666666666666,
+    "lsb_pu": 0.00044444444444444447,
+    "positive_clip_pu": 0.06111111111111111,
+    "negative_clip_pu": -0.052222222222222225
+  }
+}

@@ -1,0 +1,9 @@
+slprj/
+*.slxc
+*.asv
+*.autosave
+*.slx.r20*
+__pycache__/
+.venv/
+.DS_Store
+Thumbs.db

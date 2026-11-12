@@ -1,0 +1,30 @@
+{
+  "StudyComplete": true,
+  "CompletedCases": 3,
+  "ExpectedCases": 3,
+  "CompletedPairs": 3,
+  "ExpectedPairs": 3,
+  "ExpectedSimulations": 6,
+  "InputVerifiedPairs": 3,
+  "SwitchingComparablePairs": 3,
+  "VerifiedAndComparablePairs": 3,
+  "PlotErrors": 0,
+  "LastError": "",
+  "FinalPoint": {
+    "EligiblePairs": 3,
+    "TotalPairs": 3,
+    "EligibleSeeds": [
+      1357,
+      2468,
+      3579
+    ],
+    "ExcludedSeeds": [],
+    "QRippleImprovedPairs": 3,
+    "Mean_THD_Change_pct": -0.13604841015924618,
+    "Mean_P_Ripple_Change_pct": -2.9483982537645,
+    "Mean_Q_Ripple_Change_pct": -12.710812683052779,
+    "Mean_P_Tracking_Change_pct": -7.2524675282811542,
+    "Mean_Q_Tracking_Change_pct": -13.064851643494698,
+    "Outcome": "CONFIRMED_Q_RIPPLE_WITHOUT_MEAN_THD_OR_P_RIPPLE_PENALTY"
+  }
+}

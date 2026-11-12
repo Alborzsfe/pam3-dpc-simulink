@@ -1,0 +1,74 @@
+{
+  "source_model_sha256": "c637ed60cde46882b00b42aefcaf2d51796233b7814fdf6bbf72d947dcafd9a9",
+  "model_workspace_stored": false,
+  "blocks": [
+    {
+      "sid": "129",
+      "name": "Sum",
+      "type": "Sum",
+      "parameters": {
+        "Inputs": "|-+"
+      }
+    },
+    {
+      "sid": "135",
+      "name": "Sum1",
+      "type": "Sum",
+      "parameters": {
+        "Inputs": "|-+"
+      }
+    },
+    {
+      "sid": "82",
+      "name": "Vdc*",
+      "type": "Step",
+      "parameters": {
+        "Time": "0",
+        "After": "150",
+        "SampleTime": "0"
+      }
+    },
+    {
+      "sid": "71",
+      "name": "dp",
+      "type": "Relay",
+      "parameters": {
+        "OnSwitchValue": "1",
+        "OffSwitchValue": "-1"
+      }
+    },
+    {
+      "sid": "72",
+      "name": "dq",
+      "type": "Relay",
+      "parameters": {
+        "OnSwitchValue": "1",
+        "OffSwitchValue": "-1"
+      }
+    },
+    {
+      "sid": "68",
+      "name": "powergui",
+      "type": "Reference",
+      "parameters": {
+        "SimulationMode": "Discrete",
+        "SampleTime": "Ts"
+      }
+    },
+    {
+      "sid": "74",
+      "name": "qref",
+      "type": "Constant",
+      "parameters": {
+        "Value": "0"
+      }
+    }
+  ],
+  "original_stop_time_seconds": 10,
+  "original_solver": "VariableStepAuto",
+  "external_parameters": [
+    "Ts",
+    "e"
+  ],
+  "gate_table": "4 binary decision combinations x 12 sectors; unchanged"
+}

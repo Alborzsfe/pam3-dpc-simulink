@@ -1,0 +1,12 @@
+{
+  "changed_zip_entries": [
+    "simulink/stateflow/chart_25.xml"
+  ],
+  "switching_and_sector_code_unchanged": true,
+  "original_receiver_helpers_verbatim": true,
+  "original_model_sha256": "10615c2f27df563b9018832be180a8c1a9f56628479a68c0d43668c7325d08c7",
+  "MATLAB_Simulink_compile_run": false,
+  "status": "Static preservation checks passed; native validation required",
+  "user_reported_receiver_validation": "PASS: 4000 ticks, two independent receivers, causal final-symbol hold.",
+  "loader_fix": "Unique DPC_PAM3_Baseline; no load_system of original model; no forced close or Save As."
+}

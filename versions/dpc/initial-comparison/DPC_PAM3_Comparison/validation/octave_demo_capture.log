@@ -1,0 +1,139 @@
+PASS capture preparation: duplicate timestamps and causal zero-order hold.
+{
+  [1,1] =
+
+    scalar structure containing the fields:
+
+      channel = P
+      method = binary_replay
+      samples = 3999
+      decision_changes = 7
+      decision_changes_per_second = 350.18
+      neutral_fraction = 0
+      outer_band_sign_mismatch_fraction = 0
+      inner_band_active_fraction = 1
+      outer_band_episodes = 27
+      episodes_without_response = 0
+      response_latency_mean_s = 0
+      response_latency_max_s = 0
+
+  [1,2] =
+
+    scalar structure containing the fields:
+
+      channel = P
+      method = control_ternary
+      samples = 3999
+      decision_changes = 14
+      decision_changes_per_second = 700.35
+      neutral_fraction = 0.5464
+      outer_band_sign_mismatch_fraction = 0
+      inner_band_active_fraction = 0
+      outer_band_episodes = 27
+      episodes_without_response = 0
+      response_latency_mean_s = 0
+      response_latency_max_s = 0
+
+  [1,3] =
+
+    scalar structure containing the fields:
+
+      channel = P
+      method = patent_raw
+      samples = 3999
+      decision_changes = 368
+      decision_changes_per_second = 1.8409e+04
+      neutral_fraction = 0.6184
+      outer_band_sign_mismatch_fraction = 0.1489
+      inner_band_active_fraction = 0
+      outer_band_episodes = 27
+      episodes_without_response = 0
+      response_latency_mean_s = 1.8519e-07
+      response_latency_max_s = 5.0000e-06
+
+  [1,4] =
+
+    scalar structure containing the fields:
+
+      channel = P
+      method = patent_filtered_causal
+      samples = 3999
+      decision_changes = 270
+      decision_changes_per_second = 1.3507e+04
+      neutral_fraction = 0.6197
+      outer_band_sign_mismatch_fraction = 0.1617
+      inner_band_active_fraction = 3.7071e-03
+      outer_band_episodes = 27
+      episodes_without_response = 3
+      response_latency_mean_s = 7.2917e-06
+      response_latency_max_s = 2.0000e-05
+
+  [1,5] =
+
+    scalar structure containing the fields:
+
+      channel = Q
+      method = binary_replay
+      samples = 3999
+      decision_changes = 2
+      decision_changes_per_second = 100.05
+      neutral_fraction = 0
+      outer_band_sign_mismatch_fraction = 0
+      inner_band_active_fraction = 1
+      outer_band_episodes = 7
+      episodes_without_response = 0
+      response_latency_mean_s = 0
+      response_latency_max_s = 0
+
+  [1,6] =
+
+    scalar structure containing the fields:
+
+      channel = Q
+      method = control_ternary
+      samples = 3999
+      decision_changes = 6
+      decision_changes_per_second = 300.15
+      neutral_fraction = 0.5499
+      outer_band_sign_mismatch_fraction = 0
+      inner_band_active_fraction = 0
+      outer_band_episodes = 7
+      episodes_without_response = 0
+      response_latency_mean_s = 0
+      response_latency_max_s = 0
+
+  [1,7] =
+
+    scalar structure containing the fields:
+
+      channel = Q
+      method = patent_raw
+      samples = 3999
+      decision_changes = 462
+      decision_changes_per_second = 2.3112e+04
+      neutral_fraction = 0.6387
+      outer_band_sign_mismatch_fraction = 0.1954
+      inner_band_active_fraction = 0
+      outer_band_episodes = 7
+      episodes_without_response = 0
+      response_latency_mean_s = 0
+      response_latency_max_s = 0
+
+  [1,8] =
+
+    scalar structure containing the fields:
+
+      channel = Q
+      method = patent_filtered_causal
+      samples = 3999
+      decision_changes = 292
+      decision_changes_per_second = 1.4607e+04
+      neutral_fraction = 0.6337
+      outer_band_sign_mismatch_fraction = 0.1871
+      inner_band_active_fraction = 1.8190e-03
+      outer_band_episodes = 7
+      episodes_without_response = 0
+      response_latency_mean_s = 1.5000e-05
+      response_latency_max_s = 5.0000e-05
+
+}

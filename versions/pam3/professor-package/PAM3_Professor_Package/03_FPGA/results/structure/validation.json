@@ -1,0 +1,60 @@
+{
+  "all_passed": true,
+  "scope": "Elaboration, process lowering, optimization, connectivity and no-latch assertions. Not technology mapping or timing.",
+  "configurations": [
+    {
+      "configuration": "L1_DC0_A0",
+      "passed": true,
+      "inferred_latches": 0,
+      "elapsed_seconds": 2.27
+    },
+    {
+      "configuration": "L1_DC1_A0",
+      "passed": true,
+      "inferred_latches": 0,
+      "elapsed_seconds": 9.09
+    },
+    {
+      "configuration": "L1_DC0_A1",
+      "passed": true,
+      "inferred_latches": 0,
+      "elapsed_seconds": 3.22
+    },
+    {
+      "configuration": "L1_DC1_A1",
+      "passed": true,
+      "inferred_latches": 0,
+      "elapsed_seconds": 11.75
+    },
+    {
+      "configuration": "L8_DC0_A0",
+      "passed": true,
+      "inferred_latches": 0,
+      "elapsed_seconds": 20.57
+    },
+    {
+      "configuration": "L8_DC1_A0",
+      "passed": true,
+      "inferred_latches": 0,
+      "elapsed_seconds": 110.22
+    },
+    {
+      "configuration": "L8_DC0_A1",
+      "passed": true,
+      "inferred_latches": 0,
+      "elapsed_seconds": 50.46
+    },
+    {
+      "configuration": "L8_DC1_A1",
+      "passed": true,
+      "inferred_latches": 0,
+      "elapsed_seconds": 152.48
+    },
+    {
+      "configuration": "capture_fifo",
+      "passed": true,
+      "inferred_latches": 0,
+      "elapsed_seconds": 0.21
+    }
+  ]
+}

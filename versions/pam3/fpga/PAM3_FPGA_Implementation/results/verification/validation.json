@@ -1,0 +1,454 @@
+{
+  "all_passed": true,
+  "simulator": "Icarus Verilog 12.0",
+  "reference": "Independent offline Python edge/sampling plus Q8 causal front end",
+  "elapsed_seconds": 392.02,
+  "configurations": [
+    {
+      "configuration": "L1_DC0_A0",
+      "lanes": 1,
+      "dc_enabled": false,
+      "adaptive_q8": false,
+      "frames_per_channel": 60,
+      "samples_per_channel": 34610,
+      "core": {
+        "passed": true,
+        "frames": 60,
+        "cycles": 47878,
+        "source_stalls": 1806,
+        "sink_stalls": 741,
+        "symbols_checked": 3098
+      },
+      "analyzer": {
+        "passed": true,
+        "frames": 120,
+        "cycles": 44777,
+        "records": 295,
+        "source_stalls": 1585,
+        "sink_stalls": 3941,
+        "symbols_checked": 6202
+      }
+    },
+    {
+      "configuration": "L1_DC1_A0",
+      "lanes": 1,
+      "dc_enabled": true,
+      "adaptive_q8": false,
+      "frames_per_channel": 60,
+      "samples_per_channel": 34610,
+      "core": {
+        "passed": true,
+        "frames": 60,
+        "cycles": 47842,
+        "source_stalls": 1798,
+        "sink_stalls": 726,
+        "symbols_checked": 2984
+      },
+      "analyzer": {
+        "passed": true,
+        "frames": 120,
+        "cycles": 44777,
+        "records": 286,
+        "source_stalls": 1592,
+        "sink_stalls": 4177,
+        "symbols_checked": 5967
+      }
+    },
+    {
+      "configuration": "L1_DC0_A1",
+      "lanes": 1,
+      "dc_enabled": false,
+      "adaptive_q8": true,
+      "frames_per_channel": 60,
+      "samples_per_channel": 34610,
+      "core": {
+        "passed": true,
+        "frames": 60,
+        "cycles": 47890,
+        "source_stalls": 1842,
+        "sink_stalls": 780,
+        "symbols_checked": 3090
+      },
+      "analyzer": {
+        "passed": true,
+        "frames": 120,
+        "cycles": 44777,
+        "records": 295,
+        "source_stalls": 1585,
+        "sink_stalls": 3847,
+        "symbols_checked": 6175
+      }
+    },
+    {
+      "configuration": "L1_DC1_A1",
+      "lanes": 1,
+      "dc_enabled": true,
+      "adaptive_q8": true,
+      "frames_per_channel": 60,
+      "samples_per_channel": 34610,
+      "core": {
+        "passed": true,
+        "frames": 60,
+        "cycles": 47837,
+        "source_stalls": 1784,
+        "sink_stalls": 710,
+        "symbols_checked": 3032
+      },
+      "analyzer": {
+        "passed": true,
+        "frames": 120,
+        "cycles": 44777,
+        "records": 291,
+        "source_stalls": 1592,
+        "sink_stalls": 3945,
+        "symbols_checked": 6055
+      }
+    },
+    {
+      "configuration": "L8_DC0_A0",
+      "lanes": 8,
+      "dc_enabled": false,
+      "adaptive_q8": false,
+      "frames_per_channel": 60,
+      "samples_per_channel": 34610,
+      "core": {
+        "passed": true,
+        "frames": 60,
+        "cycles": 7137,
+        "source_stalls": 818,
+        "sink_stalls": 771,
+        "symbols_checked": 3098
+      },
+      "analyzer": {
+        "passed": true,
+        "frames": 120,
+        "cycles": 7822,
+        "records": 294,
+        "source_stalls": 1735,
+        "sink_stalls": 2554,
+        "symbols_checked": 6202
+      }
+    },
+    {
+      "configuration": "L8_DC1_A0",
+      "lanes": 8,
+      "dc_enabled": true,
+      "adaptive_q8": false,
+      "frames_per_channel": 60,
+      "samples_per_channel": 34610,
+      "core": {
+        "passed": true,
+        "frames": 60,
+        "cycles": 7136,
+        "source_stalls": 807,
+        "sink_stalls": 741,
+        "symbols_checked": 2984
+      },
+      "analyzer": {
+        "passed": true,
+        "frames": 120,
+        "cycles": 7821,
+        "records": 286,
+        "source_stalls": 1695,
+        "sink_stalls": 2514,
+        "symbols_checked": 5967
+      }
+    },
+    {
+      "configuration": "L8_DC0_A1",
+      "lanes": 8,
+      "dc_enabled": false,
+      "adaptive_q8": true,
+      "frames_per_channel": 60,
+      "samples_per_channel": 34610,
+      "core": {
+        "passed": true,
+        "frames": 60,
+        "cycles": 7153,
+        "source_stalls": 835,
+        "sink_stalls": 768,
+        "symbols_checked": 3090
+      },
+      "analyzer": {
+        "passed": true,
+        "frames": 120,
+        "cycles": 7878,
+        "records": 294,
+        "source_stalls": 1879,
+        "sink_stalls": 2591,
+        "symbols_checked": 6175
+      }
+    },
+    {
+      "configuration": "L8_DC1_A1",
+      "lanes": 8,
+      "dc_enabled": true,
+      "adaptive_q8": true,
+      "frames_per_channel": 60,
+      "samples_per_channel": 34610,
+      "core": {
+        "passed": true,
+        "frames": 60,
+        "cycles": 7165,
+        "source_stalls": 844,
+        "sink_stalls": 772,
+        "symbols_checked": 3032
+      },
+      "analyzer": {
+        "passed": true,
+        "frames": 120,
+        "cycles": 7828,
+        "records": 291,
+        "source_stalls": 1819,
+        "sink_stalls": 2576,
+        "symbols_checked": 6055
+      }
+    }
+  ],
+  "core_sample_checks": 276880,
+  "analyzer_channel_sample_checks": 553760,
+  "total_symbols_checked": 73206,
+  "total_channel_frames": 1440,
+  "stimulus_frames": [
+    {
+      "name": "empty",
+      "samples": 0
+    },
+    {
+      "name": "tail_1",
+      "samples": 1
+    },
+    {
+      "name": "tail_2",
+      "samples": 2
+    },
+    {
+      "name": "tail_3",
+      "samples": 3
+    },
+    {
+      "name": "tail_4",
+      "samples": 4
+    },
+    {
+      "name": "tail_5",
+      "samples": 5
+    },
+    {
+      "name": "tail_6",
+      "samples": 6
+    },
+    {
+      "name": "tail_7",
+      "samples": 7
+    },
+    {
+      "name": "tail_8",
+      "samples": 8
+    },
+    {
+      "name": "tail_9",
+      "samples": 9
+    },
+    {
+      "name": "tail_10",
+      "samples": 10
+    },
+    {
+      "name": "tail_11",
+      "samples": 11
+    },
+    {
+      "name": "tail_12",
+      "samples": 12
+    },
+    {
+      "name": "tail_13",
+      "samples": 13
+    },
+    {
+      "name": "tail_14",
+      "samples": 14
+    },
+    {
+      "name": "tail_15",
+      "samples": 15
+    },
+    {
+      "name": "tail_16",
+      "samples": 16
+    },
+    {
+      "name": "tail_17",
+      "samples": 17
+    },
+    {
+      "name": "tail_18",
+      "samples": 18
+    },
+    {
+      "name": "tail_19",
+      "samples": 19
+    },
+    {
+      "name": "tail_20",
+      "samples": 20
+    },
+    {
+      "name": "tail_21",
+      "samples": 21
+    },
+    {
+      "name": "tail_22",
+      "samples": 22
+    },
+    {
+      "name": "tail_23",
+      "samples": 23
+    },
+    {
+      "name": "tail_24",
+      "samples": 24
+    },
+    {
+      "name": "tail_25",
+      "samples": 25
+    },
+    {
+      "name": "tail_26",
+      "samples": 26
+    },
+    {
+      "name": "tail_27",
+      "samples": 27
+    },
+    {
+      "name": "tail_28",
+      "samples": 28
+    },
+    {
+      "name": "tail_29",
+      "samples": 29
+    },
+    {
+      "name": "tail_30",
+      "samples": 30
+    },
+    {
+      "name": "tail_31",
+      "samples": 31
+    },
+    {
+      "name": "tail_32",
+      "samples": 32
+    },
+    {
+      "name": "tail_33",
+      "samples": 33
+    },
+    {
+      "name": "constant_0",
+      "samples": 385
+    },
+    {
+      "name": "constant_60",
+      "samples": 385
+    },
+    {
+      "name": "constant_80",
+      "samples": 385
+    },
+    {
+      "name": "constant_95",
+      "samples": 385
+    },
+    {
+      "name": "constant_127",
+      "samples": 385
+    },
+    {
+      "name": "constant_140",
+      "samples": 385
+    },
+    {
+      "name": "constant_160",
+      "samples": 385
+    },
+    {
+      "name": "constant_194",
+      "samples": 385
+    },
+    {
+      "name": "constant_255",
+      "samples": 385
+    },
+    {
+      "name": "strict_thresholds",
+      "samples": 1260
+    },
+    {
+      "name": "adc_ramps",
+      "samples": 2048
+    },
+    {
+      "name": "long_runs",
+      "samples": 2319
+    },
+    {
+      "name": "width_1_2_3",
+      "samples": 2240
+    },
+    {
+      "name": "random_127",
+      "samples": 127
+    },
+    {
+      "name": "random_128",
+      "samples": 128
+    },
+    {
+      "name": "random_129",
+      "samples": 129
+    },
+    {
+      "name": "random_255",
+      "samples": 255
+    },
+    {
+      "name": "random_256",
+      "samples": 256
+    },
+    {
+      "name": "random_257",
+      "samples": 257
+    },
+    {
+      "name": "random_1023",
+      "samples": 1023
+    },
+    {
+      "name": "random_1024",
+      "samples": 1024
+    },
+    {
+      "name": "random_1025",
+      "samples": 1025
+    },
+    {
+      "name": "random_4093",
+      "samples": 4093
+    },
+    {
+      "name": "pam3_snr_32",
+      "samples": 4800
+    },
+    {
+      "name": "pam3_snr_18",
+      "samples": 4800
+    },
+    {
+      "name": "pam3_snr_9",
+      "samples": 4800
+    }
+  ]
+}

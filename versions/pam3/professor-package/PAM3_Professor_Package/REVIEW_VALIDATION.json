@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "source": "Authoritative delivered simulation and FPGA archives",
+  "new_review_checks": {
+    "python_model_tests": 13,
+    "host_parser_tests": 8,
+    "example_host_channel_frames": 120,
+    "example_host_symbols": 6202,
+    "decoded_output_matches_original": true,
+    "unchanged_algorithm_source_files": 13,
+    "visual_review": "All five 2400x1500 result views inspected",
+    "original_full_rtl_suite": "retained, not rerun in this packaging task",
+    "html_asset_links": "verified; five local views"
+  },
+  "presentation": "Screenshot-style renders of saved experiment evidence, not screenshots of Vivado or a physical instrument",
+  "changes": "Packaging and presentation only; algorithm sources unchanged"
+}

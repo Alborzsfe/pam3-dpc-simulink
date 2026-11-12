@@ -1,0 +1,21 @@
+{
+  "model": "hysteresis_pam3_compare",
+  "systems": 5,
+  "blocks": 66,
+  "draft_slx_zip_xml_references_passed": true,
+  "all_input_and_output_ports_connected": true,
+  "model_graph_json_decode_and_matlab_language_parse": "PASS in GNU Octave 8.4.0",
+  "offline_analysis_and_deliberate_mismatch_test": "PASS in GNU Octave 8.4.0",
+  "original_pam3_m_files_byte_identical": true,
+  "matlab_executed_for_new_model": false,
+  "simulink_executed": false,
+  "native_slx_opened_saved_or_compiled": false,
+  "native_rebuild_entrypoint": "START_SIMULINK_COMPARE",
+  "view_only_entrypoint": "OPEN_SIMULINK_MODEL",
+  "actual_engine_validation": "Pending user MATLAB/Simulink run; creates results_simulink/simulink_validation.mat only after a real run.",
+  "availability_guard_fix": "Removed file-only exist check; actual library loading determines availability.",
+  "cosmetic_parameter_fix": "Removed BackgroundColor settings; builder ignores legacy graph color fields.",
+  "failed_build_cleanup": "Closes incomplete model created during current build and rethrows original error.",
+  "sfunction_initialization_fix": "All block parameters are supplied in a single add_block call; FunctionName is never set before Parameters in a separate call.",
+  "subsystem_contents_fix": "Remove native default contents before adding explicit graph ports."
+}

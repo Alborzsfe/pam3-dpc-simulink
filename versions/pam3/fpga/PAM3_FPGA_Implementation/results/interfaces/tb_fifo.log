@@ -1,0 +1,2 @@
+PASS fifo checked=2606 dropped=1940 cycles=6000
+/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/tests/tb_fifo.sv:37: $finish called at 60026000 (1ps)

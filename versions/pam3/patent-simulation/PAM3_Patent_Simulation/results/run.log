@@ -1,0 +1,158 @@
+Completed snr/SNR_10/rep0
+Completed snr/SNR_10/rep1
+Completed snr/SNR_10/rep2
+Completed snr/SNR_10/rep3
+Completed snr/SNR_10/rep4
+Completed snr/SNR_14/rep0
+Completed snr/SNR_14/rep1
+Completed snr/SNR_14/rep2
+Completed snr/SNR_14/rep3
+Completed snr/SNR_14/rep4
+Completed snr/SNR_18/rep0
+Completed snr/SNR_18/rep1
+Completed snr/SNR_18/rep2
+Completed snr/SNR_18/rep3
+Completed snr/SNR_18/rep4
+Completed snr/SNR_22/rep0
+Completed snr/SNR_22/rep1
+Completed snr/SNR_22/rep2
+Completed snr/SNR_22/rep3
+Completed snr/SNR_22/rep4
+Completed snr/SNR_26/rep0
+Completed snr/SNR_26/rep1
+Completed snr/SNR_26/rep2
+Completed snr/SNR_26/rep3
+Completed snr/SNR_26/rep4
+Completed snr/SNR_30/rep0
+Completed snr/SNR_30/rep1
+Completed snr/SNR_30/rep2
+Completed snr/SNR_30/rep3
+Completed snr/SNR_30/rep4
+Completed snr/SNR_40/rep0
+Completed snr/SNR_40/rep1
+Completed snr/SNR_40/rep2
+Completed snr/SNR_40/rep3
+Completed snr/SNR_40/rep4
+Completed stress/ideal/rep0
+Completed stress/offset_plus25/rep0
+Completed stress/offset_minus25/rep0
+Completed stress/gain_065/rep0
+Completed stress/gain_135/rep0
+Completed stress/dc_step_plus30/rep0
+Completed stress/gain_step_minus035/rep0
+Completed stress/clock_plus1000ppm/rep0
+Completed stress/clock_minus1000ppm/rep0
+Completed stress/jitter_08samples/rep0
+Completed stress/echo_025/rep0
+Completed stress/coupler_leakage_015/rep0
+Completed stress/impulses/rep0
+Completed stress/slow_edges/rep0
+Completed stress/long_runs_clock_drift/rep0
+Completed stress/only_minus_zero/rep0
+Completed stress/alternating/rep0
+Completed gain_offset/g0.6_dc-40/rep0
+Completed gain_offset/g0.6_dc-20/rep0
+Completed gain_offset/g0.6_dc0/rep0
+Completed gain_offset/g0.6_dc20/rep0
+Completed gain_offset/g0.6_dc40/rep0
+Completed gain_offset/g0.8_dc-40/rep0
+Completed gain_offset/g0.8_dc-20/rep0
+Completed gain_offset/g0.8_dc0/rep0
+Completed gain_offset/g0.8_dc20/rep0
+Completed gain_offset/g0.8_dc40/rep0
+Completed gain_offset/g1.0_dc-40/rep0
+Completed gain_offset/g1.0_dc-20/rep0
+Completed gain_offset/g1.0_dc0/rep0
+Completed gain_offset/g1.0_dc20/rep0
+Completed gain_offset/g1.0_dc40/rep0
+Completed gain_offset/g1.2_dc-40/rep0
+Completed gain_offset/g1.2_dc-20/rep0
+Completed gain_offset/g1.2_dc0/rep0
+Completed gain_offset/g1.2_dc20/rep0
+Completed gain_offset/g1.2_dc40/rep0
+Completed gain_offset/g1.4_dc-40/rep0
+Completed gain_offset/g1.4_dc-20/rep0
+Completed gain_offset/g1.4_dc0/rep0
+Completed gain_offset/g1.4_dc20/rep0
+Completed gain_offset/g1.4_dc40/rep0
+{
+  "patent": "US11405248B2",
+  "date": "2026-10-04",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "numpy": "2.3.5",
+  "n_symbols": 4096,
+  "snr_repetitions": 5,
+  "channels": 2,
+  "generated_symbol_exposures": 528384,
+  "evaluated_method_runs": 516,
+  "elapsed_seconds": 22.905,
+  "decoder_configs": {
+    "patent_fixed_bypass": {
+      "plus": 140,
+      "minus": 95,
+      "zero_plus": 160,
+      "zero_minus": 80,
+      "samples_per_symbol": 12,
+      "dc_window": 128,
+      "dc_enabled": false,
+      "dc_min_gate": 80,
+      "dc_anchor": 95,
+      "adaptive": false,
+      "spike_max_width": 2,
+      "minimum_edge_distance": 9,
+      "lookahead": 4,
+      "initial_phase": 6
+    },
+    "patent_literal_dc": {
+      "plus": 140,
+      "minus": 95,
+      "zero_plus": 160,
+      "zero_minus": 80,
+      "samples_per_symbol": 12,
+      "dc_window": 128,
+      "dc_enabled": true,
+      "dc_min_gate": 80,
+      "dc_anchor": 95,
+      "adaptive": false,
+      "spike_max_width": 2,
+      "minimum_edge_distance": 9,
+      "lookahead": 4,
+      "initial_phase": 6
+    },
+    "inferred_adaptive_bypass": {
+      "plus": 140,
+      "minus": 95,
+      "zero_plus": 160,
+      "zero_minus": 80,
+      "samples_per_symbol": 12,
+      "dc_window": 128,
+      "dc_enabled": false,
+      "dc_min_gate": 80,
+      "dc_anchor": 95,
+      "adaptive": true,
+      "spike_max_width": 2,
+      "minimum_edge_distance": 9,
+      "lookahead": 4,
+      "initial_phase": 6
+    },
+    "two_threshold_fixed_clock": {
+      "plus": 140,
+      "minus": 95,
+      "zero_plus": 160,
+      "zero_minus": 80,
+      "samples_per_symbol": 12,
+      "dc_window": 128,
+      "dc_enabled": false,
+      "dc_min_gate": 80,
+      "dc_anchor": 95,
+      "adaptive": false,
+      "spike_max_width": 2,
+      "minimum_edge_distance": 9,
+      "lookahead": 4,
+      "initial_phase": 6
+    }
+  },
+  "hardware_status": "Functional Python simulation. HDL validation is reported separately.",
+  "confidence_note": "Wilson intervals describe pooled observed symbol errors; burst correlation invalidates an independent-binomial interpretation. Independent-run min/max and SD are also provided."
+}

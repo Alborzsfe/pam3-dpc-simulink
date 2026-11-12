@@ -1,0 +1,5 @@
+{
+  "status": "blocked",
+  "rendered": false,
+  "reason": "Native Chromium requires Unix sockets unavailable in this execution environment. DOM and actual API tests passed separately."
+}

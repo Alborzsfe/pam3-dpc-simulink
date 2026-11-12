@@ -1,0 +1,2 @@
+PASS frames=60 cycles=7136 source_stalls=807 sink_stalls=741
+/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/tests/tb_stream.sv:76: $finish called at 71386000 (1ps)

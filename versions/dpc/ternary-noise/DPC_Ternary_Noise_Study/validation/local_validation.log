@@ -1,0 +1,4 @@
+PASS DPC3 numerical: 696 table contexts, 862 stream samples; all 9 pairs, binary limit, ABC prediction and metrics.
+PASS callback test double: 1724 sample steps; repeated Outputs pure; Update state and golden gates match. NOT Simulink.
+PASS noise numerical: 648 oracle contexts, 216 callback samples, exact RMS/seed replay and analytic grid checks. NOT Simulink.
+PASS synthetic analysis: known THD, broadband residual, sensor RMSE, and native-provenance rejection. NOT Simulink.

@@ -1,0 +1,73 @@
+{
+  "delivery": "DPC_PAM3_Comparison",
+  "date_utc": "2026-10-13",
+  "core_validation": {
+    "passed": 1,
+    "cases_checked": 42.0,
+    "independent_error_samples_checked": 11166.0,
+    "patent_symbols_checked": 977.0,
+    "runtime": "8.4.0",
+    "reference": "Saved independent Python fixtures",
+    "simulink_executed": 0,
+    "converter_executed": 0
+  },
+  "example_independent_reference_check": {
+    "passed": true,
+    "error_samples_checked": 8002,
+    "reference": "Independent Python offline oracles",
+    "numerical_execution": "GNU Octave 8.4.0",
+    "plot_renderer": "Python matplotlib",
+    "simulink_executed": false,
+    "converter_executed": false
+  },
+  "capture_resampling_validation": {
+    "passed": 1,
+    "duplicate_timestamps_keep_last": 1,
+    "zero_order_hold_is_causal": 1,
+    "single_timestamp_scalar_and_vector_supported": 1,
+    "late_single_timestamp_is_causal": 1,
+    "missing_duration_rejected": 1,
+    "converter_executed": 0,
+    "runtime": "8.4.0"
+  },
+  "current_comparison_simulink_executed": false,
+  "current_power_converter_executed": false,
+  "matlab_available_in_authoring_runtime": false,
+  "previous_standalone_patent_validation": {
+    "source": "User-reported MATLAB R2024b run",
+    "channel_captures": 60,
+    "symbols": 6975,
+    "applies_to_new_converter_application": false
+  },
+  "slx_authoring": "OPC/XML structural assembly; START rebuilds through official native MATLAB builder",
+  "slx_relationships_verified": true,
+  "syntax_lint_passed": true,
+  "preserved_patent_core_sha256": {
+    "pam3_layout.m": "cf10f0869489fb5af0440d8c62a63d2d29294345a60d8cb5aefad6de3192c2e4",
+    "pam3_sfun.m": "246441cfc6caf22fa66534482dc95a120cdcf451109b37d723185f36d6969a80",
+    "pam3_validate_config.m": "fbf32d5ffe8d2f66d6f237be79725f77ed1c181a8bd89f65aab1f02d2e2262ba",
+    "pam3_config.m": "a029637f5d287c2eb75005086a3188aa36b497dc53112f764cc713a3c160d85e",
+    "pam3_initial_state.m": "01e819518bde6061a5921cc467eaf65651582b81c1b30e8dc3d65b12834527ac",
+    "pam3_decode.m": "7026e02a63289135aea5877efdb3a452e59143c0248e4e623209bb486c799af3",
+    "pam3_step.m": "0d39c697c5533cb9b3d642ff3c9f0d62ed5ff345c49651aae1381f9446815dcd",
+    "pam3_trace_decode.m": "3668a734c224fd7094175bcc0c2d0c72cefac71eb664c5ee749ec3e168296a06"
+  },
+  "default_external_parameter_assumptions": {
+    "Ts_seconds": 5e-06,
+    "e_phase_rms_volts": 50,
+    "used_only_if_absent_from_user_workspace": true
+  },
+  "new_control_adapter": "Two Schmitt relays + sign reversal + subtraction; release_ratio=0.5",
+  "converter_gate_table_modified": false,
+  "real_results_generated_by": "START_DPC_COMPARISON in user MATLAB/Simulink + Specialized Power Systems",
+  "local_example_input": "synthetic educational",
+  "local_example_runtime": "GNU Octave 8.4.0",
+  "local_plot_renderer": "Python matplotlib",
+  "revision": "capture-single-timestamp-fix",
+  "native_logs_saved_before_processing": true,
+  "recording_copy_measurement_cleanup": [
+    "Terminator on unused Demux third outputs",
+    "Clock denominator nonzero at t=0 in frequency monitor only"
+  ],
+  "user_reported_first_attempt": "Converter simulation returned; old postprocessing failed on a single-timestamp log. Exact signal name not supplied."
+}

@@ -1,0 +1,13 @@
+{
+  "StudyComplete": true,
+  "CompletedCases": 22,
+  "ExpectedCases": 22,
+  "CompletedPairs": 66,
+  "ExpectedPairs": 66,
+  "ExpectedSimulations": 66,
+  "InputVerifiedPairs": 66,
+  "SwitchingComparablePairs": 14,
+  "VerifiedAndComparablePairs": 14,
+  "PlotErrors": 0,
+  "LastError": ""
+}

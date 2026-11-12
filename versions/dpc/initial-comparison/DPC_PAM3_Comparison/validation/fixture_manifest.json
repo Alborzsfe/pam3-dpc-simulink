@@ -1,0 +1,13 @@
+{
+  "seed": 20261014,
+  "cases": 42,
+  "error_samples": 11166,
+  "patent_modes": [
+    0,
+    1
+  ],
+  "demo_samples_per_channel": 4001,
+  "source": "Independent Python event/three-state oracles + previous offline patent reference",
+  "converter_executed": false,
+  "file_sha256": "f27612e37f9321f2df0ef758966a738b8dc080e2a9b5d83ca7d7ee1fdbab96d3"
+}

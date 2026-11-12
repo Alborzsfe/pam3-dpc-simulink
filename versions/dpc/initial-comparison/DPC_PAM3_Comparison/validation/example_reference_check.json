@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "error_samples_checked": 8002,
+  "reference": "Independent Python offline oracles",
+  "numerical_execution": "GNU Octave 8.4.0",
+  "plot_renderer": "Python matplotlib",
+  "simulink_executed": false,
+  "converter_executed": false
+}

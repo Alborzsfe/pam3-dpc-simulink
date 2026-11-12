@@ -1,0 +1,2 @@
+PASS frames=120 cycles=7878 records=294 source_stalls=1879 sink_stalls=2591
+/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/tests/tb_analyzer.sv:55: $finish called at 78806000 (1ps)

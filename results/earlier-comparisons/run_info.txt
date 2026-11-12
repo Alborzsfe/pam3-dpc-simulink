@@ -1,0 +1,19 @@
+Runtime: MATLAB 24.2.0.2712019 (R2024b)
+MATLAB executed: 1
+Simulink executed: 0
+Input: sine 50 Hz, peak 1 normalized units
+fs: 24000 Hz; ADC center: 127; ADC gain: 67
+PAM3 original code unchanged; sample_time scaled for this bench.
+PAM3 fixed thresholds: 140,95,160,80; DC/adaptation disabled.
+Hysteresis thresholds: on >= 0.2, off <= -0.2; initial=-1
+Gaussian noise: SNR 20 dB; seed 1729; common to both blocks
+Clipped samples: clean=0, noisy=0
+Measurement: warmup 5 cycles; measure 20 cycles; same window for both
+THD: coherent exact bins, orders 2..40; DC excluded
+THD+N: all residual AC below/at sampled Nyquist, DC excluded
+Assumed voltage: level * 1 V; resistor 1 ohm; p=v^2/R
+Ripple RMS=sqrt(mean((p-mean(p)).^2)); ripple pp=max(p)-min(p)
+Relative ripple = 100*absolute ripple/mean(p)
+Binary +/-1 levels necessarily have constant resistor power.
+No converter, grid, DPC, switching table or physical power measurement.
+No automatic gain equalization, denoising, or parameter optimization.

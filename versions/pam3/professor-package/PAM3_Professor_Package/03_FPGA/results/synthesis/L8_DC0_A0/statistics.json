@@ -1,0 +1,124 @@
+{
+   "creator": "Yosys 0.33 (git sha1 2584903a060)",
+   "invocation": "stat -json ",
+   "modules": {
+      "$paramod$3411077f76231fdf04381a67c2c9c77b0959e736\\pam3_stream_core": {
+         "num_wires":         7227,
+         "num_wire_bits":     40179,
+         "num_pub_wires":     92,
+         "num_pub_wire_bits": 2096,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         13925,
+         "num_cells_by_type": {
+            "CARRY4": 1250,
+            "FDRE": 1650,
+            "FDSE": 2,
+            "INV": 805,
+            "LUT1": 359,
+            "LUT2": 1777,
+            "LUT3": 2472,
+            "LUT4": 472,
+            "LUT5": 998,
+            "LUT6": 2690,
+            "MUXF7": 1103,
+            "MUXF8": 347
+         }
+      },
+      "$paramod$7c00cd5e6b8c7bc1b1391f1c0a6a3f22c52a2116\\pam3_dual_core": {
+         "num_wires":         26,
+         "num_wire_bits":     1284,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 1284,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4,
+         "num_cells_by_type": {
+            "$paramod$3411077f76231fdf04381a67c2c9c77b0959e736\\pam3_stream_core": 2,
+            "LUT2": 1,
+            "LUT3": 1
+         }
+      },
+      "$paramod\\pam3_symbol_packer\\LANES=s32'00000000000000000000000000001000": {
+         "num_wires":         1437,
+         "num_wire_bits":     6070,
+         "num_pub_wires":     22,
+         "num_pub_wire_bits": 376,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2934,
+         "num_cells_by_type": {
+            "CARRY4": 88,
+            "FDRE": 226,
+            "INV": 26,
+            "LUT1": 94,
+            "LUT2": 392,
+            "LUT3": 186,
+            "LUT4": 106,
+            "LUT5": 505,
+            "LUT6": 847,
+            "MUXF7": 367,
+            "MUXF8": 97
+         }
+      },
+      "\\pam3_analyzer_core": {
+         "num_wires":         37,
+         "num_wire_bits":     602,
+         "num_pub_wires":     37,
+         "num_pub_wire_bits": 602,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4,
+         "num_cells_by_type": {
+            "$paramod$7c00cd5e6b8c7bc1b1391f1c0a6a3f22c52a2116\\pam3_dual_core": 1,
+            "$paramod\\pam3_symbol_packer\\LANES=s32'00000000000000000000000000001000": 2,
+            "pam3_host_mux": 1
+         }
+      },
+      "\\pam3_host_mux": {
+         "num_wires":         127,
+         "num_wire_bits":     454,
+         "num_pub_wires":     19,
+         "num_pub_wire_bits": 346,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         217,
+         "num_cells_by_type": {
+            "FDRE": 107,
+            "LUT4": 2,
+            "LUT5": 107,
+            "LUT6": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         17518,
+         "num_wire_bits":     94838,
+         "num_pub_wires":     310,
+         "num_pub_wire_bits": 7176,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         33937,
+         "num_cells_by_type": {
+            "CARRY4": 2676,
+            "FDRE": 3859,
+            "FDSE": 4,
+            "INV": 1662,
+            "LUT1": 906,
+            "LUT2": 4339,
+            "LUT3": 5317,
+            "LUT4": 1158,
+            "LUT5": 3113,
+            "LUT6": 7075,
+            "MUXF7": 2940,
+            "MUXF8": 888
+         }
+      }
+}
+

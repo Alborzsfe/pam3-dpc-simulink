@@ -1,0 +1,338 @@
+{
+  "noise": {
+    "10": {
+      "n": 40560,
+      "runs": 10,
+      "pct": 21.634615384615383,
+      "errors": 8775,
+      "missing": 294,
+      "duplicated_symbols": 3688,
+      "extra_outputs": 3710,
+      "amplitude_errors_single": 4793
+    },
+    "14": {
+      "n": 40560,
+      "runs": 10,
+      "pct": 6.070019723865878,
+      "errors": 2462,
+      "missing": 23,
+      "duplicated_symbols": 1087,
+      "extra_outputs": 1088,
+      "amplitude_errors_single": 1352
+    },
+    "18": {
+      "n": 40560,
+      "runs": 10,
+      "pct": 0.5522682445759369,
+      "errors": 224,
+      "missing": 1,
+      "duplicated_symbols": 137,
+      "extra_outputs": 137,
+      "amplitude_errors_single": 86
+    },
+    "22": {
+      "n": 40560,
+      "runs": 10,
+      "pct": 0.01972386587771203,
+      "errors": 8,
+      "missing": 0,
+      "duplicated_symbols": 8,
+      "extra_outputs": 8,
+      "amplitude_errors_single": 0
+    },
+    "26": {
+      "n": 40560,
+      "runs": 10,
+      "pct": 0.0,
+      "errors": 0,
+      "missing": 0,
+      "duplicated_symbols": 0,
+      "extra_outputs": 0,
+      "amplitude_errors_single": 0
+    },
+    "30": {
+      "n": 40560,
+      "runs": 10,
+      "pct": 0.0,
+      "errors": 0,
+      "missing": 0,
+      "duplicated_symbols": 0,
+      "extra_outputs": 0,
+      "amplitude_errors_single": 0
+    },
+    "40": {
+      "n": 40560,
+      "runs": 10,
+      "pct": 0.0,
+      "errors": 0,
+      "missing": 0,
+      "duplicated_symbols": 0,
+      "extra_outputs": 0,
+      "amplitude_errors_single": 0
+    }
+  },
+  "stress": {
+    "gain_step_minus035": {
+      "patent_fixed_bypass": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 6.804733727810651,
+        "errors": 552,
+        "missing": 27,
+        "duplicated_symbols": 367,
+        "extra_outputs": 370,
+        "amplitude_errors_single": 158
+      },
+      "inferred_adaptive_bypass": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 0.13560157790927022,
+        "errors": 11,
+        "missing": 0,
+        "duplicated_symbols": 7,
+        "extra_outputs": 7,
+        "amplitude_errors_single": 4
+      },
+      "two_threshold_fixed_clock": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 0.0,
+        "errors": 0,
+        "missing": 0,
+        "duplicated_symbols": 0,
+        "extra_outputs": 0,
+        "amplitude_errors_single": 0
+      },
+      "patent_literal_dc": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 46.05522682445759,
+        "errors": 3736,
+        "missing": 27,
+        "duplicated_symbols": 347,
+        "extra_outputs": 349,
+        "amplitude_errors_single": 3362
+      }
+    },
+    "offset_plus25": {
+      "patent_fixed_bypass": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 31.84171597633136,
+        "errors": 2583,
+        "missing": 93,
+        "duplicated_symbols": 1135,
+        "extra_outputs": 1149,
+        "amplitude_errors_single": 1355
+      },
+      "inferred_adaptive_bypass": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 0.01232741617357002,
+        "errors": 1,
+        "missing": 0,
+        "duplicated_symbols": 0,
+        "extra_outputs": 0,
+        "amplitude_errors_single": 1
+      },
+      "two_threshold_fixed_clock": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 0.0,
+        "errors": 0,
+        "missing": 0,
+        "duplicated_symbols": 0,
+        "extra_outputs": 0,
+        "amplitude_errors_single": 0
+      },
+      "patent_literal_dc": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 32.6060157790927,
+        "errors": 2645,
+        "missing": 91,
+        "duplicated_symbols": 1117,
+        "extra_outputs": 1132,
+        "amplitude_errors_single": 1437
+      }
+    },
+    "offset_minus25": {
+      "patent_fixed_bypass": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 0.0,
+        "errors": 0,
+        "missing": 0,
+        "duplicated_symbols": 0,
+        "extra_outputs": 0,
+        "amplitude_errors_single": 0
+      },
+      "inferred_adaptive_bypass": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 0.0,
+        "errors": 0,
+        "missing": 0,
+        "duplicated_symbols": 0,
+        "extra_outputs": 0,
+        "amplitude_errors_single": 0
+      },
+      "two_threshold_fixed_clock": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 0.0,
+        "errors": 0,
+        "missing": 0,
+        "duplicated_symbols": 0,
+        "extra_outputs": 0,
+        "amplitude_errors_single": 0
+      },
+      "patent_literal_dc": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 64.53402366863905,
+        "errors": 5235,
+        "missing": 0,
+        "duplicated_symbols": 0,
+        "extra_outputs": 0,
+        "amplitude_errors_single": 5235
+      }
+    },
+    "slow_edges": {
+      "patent_fixed_bypass": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 0.0,
+        "errors": 0,
+        "missing": 0,
+        "duplicated_symbols": 0,
+        "extra_outputs": 0,
+        "amplitude_errors_single": 0
+      },
+      "inferred_adaptive_bypass": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 0.14792899408284024,
+        "errors": 12,
+        "missing": 0,
+        "duplicated_symbols": 1,
+        "extra_outputs": 1,
+        "amplitude_errors_single": 11
+      },
+      "two_threshold_fixed_clock": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 7.507396449704142,
+        "errors": 609,
+        "missing": 0,
+        "duplicated_symbols": 0,
+        "extra_outputs": 0,
+        "amplitude_errors_single": 609
+      },
+      "patent_literal_dc": {
+        "n": 8112,
+        "runs": 2,
+        "pct": 62.78353057199211,
+        "errors": 5093,
+        "missing": 7,
+        "duplicated_symbols": 42,
+        "extra_outputs": 42,
+        "amplitude_errors_single": 5044
+      }
+    }
+  },
+  "literal_dc_30": {
+    "n": 40560,
+    "runs": 10,
+    "pct": 65.30325443786982,
+    "errors": 26487,
+    "missing": 0,
+    "duplicated_symbols": 10,
+    "extra_outputs": 10,
+    "amplitude_errors_single": 26477
+  },
+  "rtl": {
+    "total_symbols_checked": 73206,
+    "total_channel_frames": 1440
+  },
+  "synthesis": [
+    {
+      "configuration": "L1_DC0_A0",
+      "tool": "Yosys 0.33 (git sha1 2584903a060)",
+      "family": "Xilinx 7-series (XC7), generic mapping, no physical part selected",
+      "elapsed_seconds": 12.11,
+      "check_passed": true,
+      "inferred_latches": 0,
+      "flow": "synth_xilinx with optional SAT resource-sharing optimization omitted",
+      "cell_counts": {
+        "CARRY4": 378,
+        "FDRE": 1797,
+        "FDSE": 4,
+        "INV": 222,
+        "LUT1": 70,
+        "LUT2": 455,
+        "LUT3": 361,
+        "LUT4": 258,
+        "LUT5": 667,
+        "LUT6": 983,
+        "MUXF7": 110,
+        "MUXF8": 48
+      },
+      "total_cells": 5353,
+      "LUT_cells": 2794,
+      "FF_cells": 1801,
+      "scope": "Technology-mapped netlist only; no place/route, frequency, electrical I/O or board execution proof"
+    },
+    {
+      "configuration": "L8_DC0_A0",
+      "tool": "Yosys 0.33 (git sha1 2584903a060)",
+      "family": "Xilinx 7-series (XC7), generic mapping, no physical part selected",
+      "elapsed_seconds": 81.19,
+      "check_passed": true,
+      "inferred_latches": 0,
+      "flow": "synth_xilinx with optional SAT resource-sharing optimization omitted",
+      "cell_counts": {
+        "CARRY4": 2676,
+        "FDRE": 3859,
+        "FDSE": 4,
+        "INV": 1662,
+        "LUT1": 906,
+        "LUT2": 4339,
+        "LUT3": 5317,
+        "LUT4": 1158,
+        "LUT5": 3113,
+        "LUT6": 7075,
+        "MUXF7": 2940,
+        "MUXF8": 888
+      },
+      "total_cells": 33937,
+      "LUT_cells": 21908,
+      "FF_cells": 3863,
+      "scope": "Technology-mapped netlist only; no place/route, frequency, electrical I/O or board execution proof"
+    }
+  ],
+  "post_synthesis": [
+    {
+      "configuration": "L1_DC0_A0",
+      "passed": true,
+      "technology": "XC7 functional primitive simulation, no timing delays",
+      "channel_frames": 76,
+      "channel_samples_checked": 20404,
+      "symbols_checked": 1871,
+      "records": 127,
+      "elapsed_seconds": 65.77,
+      "simulation": "PASS frames=76 cycles=13960 records=127 source_stalls=1129 sink_stalls=1458\n/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/tests/tb_analyzer.sv:59: $finish called at 139626000 (1ps)"
+    },
+    {
+      "configuration": "L8_DC0_A0",
+      "passed": true,
+      "technology": "XC7 functional primitive simulation, no timing delays",
+      "channel_frames": 76,
+      "channel_samples_checked": 3170,
+      "symbols_checked": 297,
+      "records": 76,
+      "elapsed_seconds": 135.05,
+      "simulation": "PASS frames=76 cycles=693 records=76 source_stalls=306 sink_stalls=336\n/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/tests/tb_analyzer.sv:59: $finish called at 6956000 (1ps)"
+    }
+  ]
+}

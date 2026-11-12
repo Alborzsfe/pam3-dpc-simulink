@@ -1,0 +1,3 @@
+This folder will contain four genuine converter-result figures after START_CONTROL_QUALITY completes in MATLAB.
+No converter screenshots or performance numbers have been fabricated or prefilled.
+Conventional appears above Proposed; control sampling rates are 20 and 200 kHz.

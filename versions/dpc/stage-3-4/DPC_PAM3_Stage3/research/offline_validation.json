@@ -1,0 +1,125 @@
+{
+  "property_tests": {
+    "compatibility_samples": 100009,
+    "compatibility_decision_mismatches": 0,
+    "bounded_band_and_emergency_samples": 50000,
+    "constant_start_tests": [
+      {
+        "e": 0.02,
+        "first_sample_decision": 1
+      },
+      {
+        "e": -0.02,
+        "first_sample_decision": -1
+      },
+      {
+        "e": 1,
+        "first_sample_decision": 1
+      },
+      {
+        "e": -1,
+        "first_sample_decision": -1
+      }
+    ],
+    "scope": "Python translation; native MATLAB tests also supplied"
+  },
+  "approximate_plant_runs": [
+    {
+      "gain": 0,
+      "noise_std_W_var": 0,
+      "seed": 321,
+      "P_mean_W": 387.573038432853,
+      "P_ripple_RMS_W": 9.528054795604046,
+      "Q_mean_var": 3.2356216569863334,
+      "Q_ripple_RMS_var": 9.357531352748499,
+      "Ia_THD_2kHz_pct": 1.3073202833032995,
+      "Vdc_mean_V": 147.3120512263379,
+      "Vdc_ripple_pp_V": 0.5700063534383162
+    },
+    {
+      "gain": 0.5,
+      "noise_std_W_var": 0,
+      "seed": 321,
+      "P_mean_W": 387.573038432853,
+      "P_ripple_RMS_W": 9.528054795604046,
+      "Q_mean_var": 3.2356216569863334,
+      "Q_ripple_RMS_var": 9.357531352748499,
+      "Ia_THD_2kHz_pct": 1.3073202833032995,
+      "Vdc_mean_V": 147.3120512263379,
+      "Vdc_ripple_pp_V": 0.5700063534383162
+    },
+    {
+      "gain": 0,
+      "noise_std_W_var": 8,
+      "seed": 321,
+      "P_mean_W": 387.6271577117266,
+      "P_ripple_RMS_W": 11.331130653069486,
+      "Q_mean_var": 3.710792816026207,
+      "Q_ripple_RMS_var": 11.253563742432686,
+      "Ia_THD_2kHz_pct": 1.8584792373827794,
+      "Vdc_mean_V": 147.34870216144526,
+      "Vdc_ripple_pp_V": 0.5618020297565636
+    },
+    {
+      "gain": 0,
+      "noise_std_W_var": 8,
+      "seed": 654,
+      "P_mean_W": 387.717771959866,
+      "P_ripple_RMS_W": 11.233564378105935,
+      "Q_mean_var": 3.814004399090814,
+      "Q_ripple_RMS_var": 11.359656398044333,
+      "Ia_THD_2kHz_pct": 1.6931445352228622,
+      "Vdc_mean_V": 147.3542862301698,
+      "Vdc_ripple_pp_V": 0.5618891889892552
+    },
+    {
+      "gain": 0,
+      "noise_std_W_var": 8,
+      "seed": 987,
+      "P_mean_W": 387.60244879006717,
+      "P_ripple_RMS_W": 11.33263619440256,
+      "Q_mean_var": 3.9550137848719062,
+      "Q_ripple_RMS_var": 11.604467965745497,
+      "Ia_THD_2kHz_pct": 2.0021996294324524,
+      "Vdc_mean_V": 147.34600294347706,
+      "Vdc_ripple_pp_V": 0.5580295281241945
+    },
+    {
+      "gain": 0.5,
+      "noise_std_W_var": 8,
+      "seed": 321,
+      "P_mean_W": 387.64836740748467,
+      "P_ripple_RMS_W": 11.561073715252562,
+      "Q_mean_var": 3.7271695694874185,
+      "Q_ripple_RMS_var": 11.602630093114575,
+      "Ia_THD_2kHz_pct": 2.004637114328091,
+      "Vdc_mean_V": 147.34481501731278,
+      "Vdc_ripple_pp_V": 0.5622719553896616
+    },
+    {
+      "gain": 0.5,
+      "noise_std_W_var": 8,
+      "seed": 654,
+      "P_mean_W": 387.6429264950705,
+      "P_ripple_RMS_W": 11.017476684878526,
+      "Q_mean_var": 3.6352474099615955,
+      "Q_ripple_RMS_var": 11.736069543973741,
+      "Ia_THD_2kHz_pct": 1.6852722619085896,
+      "Vdc_mean_V": 147.3485067719263,
+      "Vdc_ripple_pp_V": 0.5588394216431425
+    },
+    {
+      "gain": 0.5,
+      "noise_std_W_var": 8,
+      "seed": 987,
+      "P_mean_W": 387.5958638556886,
+      "P_ripple_RMS_W": 11.63546587075381,
+      "Q_mean_var": 3.992537075414035,
+      "Q_ripple_RMS_var": 11.895900113900666,
+      "Ia_THD_2kHz_pct": 1.9712321910994206,
+      "Vdc_mean_V": 147.34473077472742,
+      "Vdc_ripple_pp_V": 0.5594108866536658
+    }
+  ],
+  "limitation": "Approximate exploratory plant only; these are NOT MATLAB/Simulink results or proof of improvement."
+}

@@ -1,0 +1,17 @@
+{
+  "patent": "US11405248B2",
+  "delivery": "Portable streaming digital reconstruction",
+  "created": "2026-10-04",
+  "implemented": "Paired deserialized 8-bit ADC -> PAM3 levels/points/symbols -> 128-bit host records",
+  "files_requiring_external_tools": "Icarus for RTL, Yosys for mapping, Vivado for optional OOC flow",
+  "physical_limit": "No board-specific ADC PHY/CDC/coupler/DVGA/USB/PCS/bitstream or frequency measurement",
+  "validation_files": [
+    "results/verification/validation.json",
+    "results/interfaces/validation.json",
+    "results/structure/validation.json",
+    "results/synthesis/L1_DC0_A0/summary.json",
+    "results/synthesis/L8_DC0_A0/summary.json",
+    "results/post_synthesis/L1_DC0_A0/validation.json",
+    "results/post_synthesis/L8_DC0_A0/validation.json"
+  ]
+}

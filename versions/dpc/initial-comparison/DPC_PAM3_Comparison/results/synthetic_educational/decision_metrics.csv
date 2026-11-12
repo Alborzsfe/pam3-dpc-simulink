@@ -1,0 +1,9 @@
+channel,method,samples,decision_changes,decision_changes_per_second,neutral_fraction,outer_band_sign_mismatch_fraction,inner_band_active_fraction,outer_band_episodes,episodes_without_response,response_latency_mean_s,response_latency_max_s
+P,binary_replay,3999,7,350.175087544,0,0,1,27,0,0,0
+P,control_ternary,3999,14,700.350175088,0.546386596649,0,0,27,0,0,0
+P,patent_raw,3999,368,18409.2046023,0.61840460115,0.148912437256,0,27,0,1.85185185185e-07,5e-06
+P,patent_filtered_causal,3999,270,13506.7533767,0.619654913728,0.16174010039,0.00370713623726,27,3,7.29166666667e-06,2e-05
+Q,binary_replay,3999,2,100.050025013,0,0,1,7,0,0,0
+Q,control_ternary,3999,6,300.150075038,0.549887471868,0,0,7,0,0,0
+Q,patent_raw,3999,462,23111.5557779,0.638659664916,0.195434298441,0,7,0,0,0
+Q,patent_filtered_causal,3999,292,14607.3036518,0.633658414604,0.187082405345,0.00181900864029,7,0,1.5e-05,5e-05

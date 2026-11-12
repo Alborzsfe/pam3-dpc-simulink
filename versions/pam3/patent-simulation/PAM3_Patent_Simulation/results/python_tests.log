@@ -1,0 +1,31 @@
+test_actual_new_simulation_two_channels_four_methods (test_api.APITests.test_actual_new_simulation_two_channels_four_methods) ... 127.0.0.1 - - [04/Oct/2026 10:16:20] "POST /api/simulate HTTP/1.1" 200 -
+127.0.0.1 - - [04/Oct/2026 10:16:20] "POST /api/simulate HTTP/1.1" 200 -
+ok
+test_invalid_requests_rejected (test_api.APITests.test_invalid_requests_rejected) ... 127.0.0.1 - - [04/Oct/2026 10:16:20] "POST /api/simulate HTTP/1.1" 400 -
+127.0.0.1 - - [04/Oct/2026 10:16:20] "POST /api/simulate HTTP/1.1" 400 -
+127.0.0.1 - - [04/Oct/2026 10:16:20] "POST /api/simulate HTTP/1.1" 400 -
+127.0.0.1 - - [04/Oct/2026 10:16:20] "POST /api/simulate HTTP/1.1" 400 -
+ok
+test_saved_dashboard_served (test_api.APITests.test_saved_dashboard_served) ... 127.0.0.1 - - [04/Oct/2026 10:16:20] "GET / HTTP/1.1" 200 -
+ok
+test_unrelated_web_origin_rejected (test_api.APITests.test_unrelated_web_origin_rejected) ... 127.0.0.1 - - [04/Oct/2026 10:16:20] code 403, message Forbidden
+127.0.0.1 - - [04/Oct/2026 10:16:20] "POST /api/simulate HTTP/1.1" 403 -
+ok
+test_dc_bypasses_two_level_without_negative (test_model.ModelTests.test_dc_bypasses_two_level_without_negative) ... ok
+test_dc_bypasses_two_level_without_positive (test_model.ModelTests.test_dc_bypasses_two_level_without_positive) ... ok
+test_dc_literal_equation_widened_and_strict_overflow (test_model.ModelTests.test_dc_literal_equation_widened_and_strict_overflow) ... ok
+test_decoder_does_not_receive_truth_or_channel_parameters (test_model.ModelTests.test_decoder_does_not_receive_truth_or_channel_parameters) ... ok
+test_figure4g_zero_valley_midpoint (test_model.ModelTests.test_figure4g_zero_valley_midpoint) ... ok
+test_high_snr_reconstruction_and_two_channel_phases (test_model.ModelTests.test_high_snr_reconstruction_and_two_channel_phases) ... ok
+test_literal_dc_conflict_is_observable (test_model.ModelTests.test_literal_dc_conflict_is_observable) ... ok
+test_missing_and_extra_are_errors_not_dropped (test_model.ModelTests.test_missing_and_extra_are_errors_not_dropped) ... ok
+test_reproducible_jitter_noise_and_no_negative_duration (test_model.ModelTests.test_reproducible_jitter_noise_and_no_negative_duration) ... ok
+test_rolling_window_against_direct_extrema (test_model.ModelTests.test_rolling_window_against_direct_extrema) ... ok
+test_sampling_filter_keeps_must_and_removes_forecast (test_model.ModelTests.test_sampling_filter_keeps_must_and_removes_forecast) ... ok
+test_slopes_hold_on_equal_samples (test_model.ModelTests.test_slopes_hold_on_equal_samples) ... ok
+test_spike_two_samples_removed_three_retained (test_model.ModelTests.test_spike_two_samples_removed_three_retained) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.202s
+
+OK

@@ -1,0 +1,125 @@
+{
+  "property_tests": {
+    "compatibility_samples": 100009,
+    "compatibility_decision_mismatches": 0,
+    "bounded_band_and_emergency_samples": 50000,
+    "constant_start_tests": [
+      {
+        "e": 0.02,
+        "first_sample_decision": 1
+      },
+      {
+        "e": -0.02,
+        "first_sample_decision": -1
+      },
+      {
+        "e": 1,
+        "first_sample_decision": 1
+      },
+      {
+        "e": -1,
+        "first_sample_decision": -1
+      }
+    ],
+    "scope": "Python translation; native MATLAB tests also supplied"
+  },
+  "cases": [
+    {
+      "noise_std": 0,
+      "seed": 321,
+      "model_assisted": false,
+      "P_mean_W": 387.573038432853,
+      "P_ripple_RMS_W": 9.528054795604046,
+      "Q_mean_var": 3.2356216569863334,
+      "Q_ripple_RMS_var": 9.357531352748499,
+      "Ia_THD_2kHz_pct": 1.3073202833032995,
+      "Vdc_mean_V": 147.3120512263379,
+      "Vdc_ripple_pp_V": 0.5700063534383162
+    },
+    {
+      "noise_std": 0,
+      "seed": 321,
+      "model_assisted": true,
+      "P_mean_W": 387.573038432853,
+      "P_ripple_RMS_W": 9.528054795604046,
+      "Q_mean_var": 3.2356216569863334,
+      "Q_ripple_RMS_var": 9.357531352748499,
+      "Ia_THD_2kHz_pct": 1.3073202833032995,
+      "Vdc_mean_V": 147.3120512263379,
+      "Vdc_ripple_pp_V": 0.5700063534383162
+    },
+    {
+      "noise_std": 8,
+      "seed": 321,
+      "model_assisted": false,
+      "P_mean_W": 387.6271577117266,
+      "P_ripple_RMS_W": 11.331130653069486,
+      "Q_mean_var": 3.710792816026207,
+      "Q_ripple_RMS_var": 11.253563742432686,
+      "Ia_THD_2kHz_pct": 1.8584792373827794,
+      "Vdc_mean_V": 147.34870216144526,
+      "Vdc_ripple_pp_V": 0.5618020297565636
+    },
+    {
+      "noise_std": 8,
+      "seed": 321,
+      "model_assisted": true,
+      "P_mean_W": 387.40443021172587,
+      "P_ripple_RMS_W": 11.145411915121072,
+      "Q_mean_var": 3.4943990359675863,
+      "Q_ripple_RMS_var": 10.564582845262455,
+      "Ia_THD_2kHz_pct": 1.540819104314946,
+      "Vdc_mean_V": 147.3237293237693,
+      "Vdc_ripple_pp_V": 0.557507335514174
+    },
+    {
+      "noise_std": 8,
+      "seed": 654,
+      "model_assisted": false,
+      "P_mean_W": 387.717771959866,
+      "P_ripple_RMS_W": 11.233564378105935,
+      "Q_mean_var": 3.814004399090814,
+      "Q_ripple_RMS_var": 11.359656398044333,
+      "Ia_THD_2kHz_pct": 1.6931445352228622,
+      "Vdc_mean_V": 147.3542862301698,
+      "Vdc_ripple_pp_V": 0.5618891889892552
+    },
+    {
+      "noise_std": 8,
+      "seed": 654,
+      "model_assisted": true,
+      "P_mean_W": 387.563965514864,
+      "P_ripple_RMS_W": 11.000844032362599,
+      "Q_mean_var": 2.9340737966344377,
+      "Q_ripple_RMS_var": 10.433328298842069,
+      "Ia_THD_2kHz_pct": 1.3094438299666848,
+      "Vdc_mean_V": 147.32508776934583,
+      "Vdc_ripple_pp_V": 0.5633831054962286
+    },
+    {
+      "noise_std": 8,
+      "seed": 987,
+      "model_assisted": false,
+      "P_mean_W": 387.60244879006717,
+      "P_ripple_RMS_W": 11.33263619440256,
+      "Q_mean_var": 3.9550137848719062,
+      "Q_ripple_RMS_var": 11.604467965745497,
+      "Ia_THD_2kHz_pct": 2.0021996294324524,
+      "Vdc_mean_V": 147.34600294347706,
+      "Vdc_ripple_pp_V": 0.5580295281241945
+    },
+    {
+      "noise_std": 8,
+      "seed": 987,
+      "model_assisted": true,
+      "P_mean_W": 387.62998790989957,
+      "P_ripple_RMS_W": 11.374845820294627,
+      "Q_mean_var": 3.0913821619407735,
+      "Q_ripple_RMS_var": 10.438722839693806,
+      "Ia_THD_2kHz_pct": 1.3882213525227318,
+      "Vdc_mean_V": 147.32756685570644,
+      "Vdc_ripple_pp_V": 0.5714577979179296
+    }
+  ],
+  "limitation": "Exploratory Euler alpha-beta plant only. NOT Simulink. No diodes/parasitics or exact powergui solver."
+}

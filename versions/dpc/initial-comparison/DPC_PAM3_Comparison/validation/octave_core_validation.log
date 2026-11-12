@@ -1,0 +1,9 @@
+PASS core: 42 cases, 11166 independent error samples, 977 patent symbols.
+    passed = 1
+    cases_checked = 42
+    independent_error_samples_checked = 11166
+    patent_symbols_checked = 977
+    runtime = 8.4.0
+    reference = Saved independent Python fixtures
+    simulink_executed = 0
+    converter_executed = 0

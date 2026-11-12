@@ -1,0 +1,1985 @@
+{
+  "model": "hysteresis_pam3_compare",
+  "systems": [
+    {
+      "id": "root",
+      "blocks": [
+        {
+          "type": "FromWorkspace",
+          "source": "simulink/Sources/From Workspace",
+          "name": "Clean_ADC",
+          "position": [
+            40,
+            140,
+            195,
+            190
+          ],
+          "ports": [
+            0,
+            1
+          ],
+          "params": {
+            "VariableName": "simple_adc_clean",
+            "Interpolate": "off",
+            "SampleTime": "simple_ts",
+            "OutputAfterFinalValue": "Holding final value"
+          },
+          "subsystem": "",
+          "sid": 1
+        },
+        {
+          "type": "SubSystem",
+          "source": "built-in/SubSystem",
+          "name": "Clean_Test",
+          "position": [
+            270,
+            105,
+            535,
+            320
+          ],
+          "ports": [
+            1,
+            3
+          ],
+          "params": {},
+          "subsystem": "clean_test",
+          "sid": 2
+        },
+        {
+          "type": "Scope",
+          "source": "simulink/Sinks/Scope",
+          "name": "Clean_Levels_Scope",
+          "position": [
+            650,
+            105,
+            730,
+            160
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {},
+          "subsystem": "",
+          "sid": 3
+        },
+        {
+          "type": "ToWorkspace",
+          "source": "simulink/Sinks/To Workspace",
+          "name": "Clean_Levels_Log",
+          "position": [
+            850,
+            105,
+            1040,
+            150
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "VariableName": "levels_clean",
+            "SaveFormat": "Array",
+            "MaxDataPoints": "inf",
+            "Decimation": "1",
+            "SampleTime": "-1"
+          },
+          "subsystem": "",
+          "sid": 4
+        },
+        {
+          "type": "Scope",
+          "source": "simulink/Sinks/Scope",
+          "name": "Clean_Power_Scope",
+          "position": [
+            650,
+            200,
+            730,
+            255
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {},
+          "subsystem": "",
+          "sid": 5
+        },
+        {
+          "type": "ToWorkspace",
+          "source": "simulink/Sinks/To Workspace",
+          "name": "Clean_Power_Log",
+          "position": [
+            850,
+            200,
+            1040,
+            245
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "VariableName": "power_clean",
+            "SaveFormat": "Array",
+            "MaxDataPoints": "inf",
+            "Decimation": "1",
+            "SampleTime": "-1"
+          },
+          "subsystem": "",
+          "sid": 6
+        },
+        {
+          "type": "ToWorkspace",
+          "source": "simulink/Sinks/To Workspace",
+          "name": "Clean_ADC_Trace_Log",
+          "position": [
+            650,
+            290,
+            850,
+            335
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "VariableName": "debug_clean",
+            "SaveFormat": "Array",
+            "MaxDataPoints": "inf",
+            "Decimation": "1",
+            "SampleTime": "-1"
+          },
+          "subsystem": "",
+          "sid": 7
+        },
+        {
+          "type": "FromWorkspace",
+          "source": "simulink/Sources/From Workspace",
+          "name": "Noisy_ADC",
+          "position": [
+            40,
+            450,
+            195,
+            500
+          ],
+          "ports": [
+            0,
+            1
+          ],
+          "params": {
+            "VariableName": "simple_adc_noisy",
+            "Interpolate": "off",
+            "SampleTime": "simple_ts",
+            "OutputAfterFinalValue": "Holding final value"
+          },
+          "subsystem": "",
+          "sid": 8
+        },
+        {
+          "type": "SubSystem",
+          "source": "built-in/SubSystem",
+          "name": "Noisy_Test",
+          "position": [
+            270,
+            415,
+            535,
+            630
+          ],
+          "ports": [
+            1,
+            3
+          ],
+          "params": {},
+          "subsystem": "noisy_test",
+          "sid": 9
+        },
+        {
+          "type": "Scope",
+          "source": "simulink/Sinks/Scope",
+          "name": "Noisy_Levels_Scope",
+          "position": [
+            650,
+            415,
+            730,
+            470
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {},
+          "subsystem": "",
+          "sid": 10
+        },
+        {
+          "type": "ToWorkspace",
+          "source": "simulink/Sinks/To Workspace",
+          "name": "Noisy_Levels_Log",
+          "position": [
+            850,
+            415,
+            1040,
+            460
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "VariableName": "levels_noisy",
+            "SaveFormat": "Array",
+            "MaxDataPoints": "inf",
+            "Decimation": "1",
+            "SampleTime": "-1"
+          },
+          "subsystem": "",
+          "sid": 11
+        },
+        {
+          "type": "Scope",
+          "source": "simulink/Sinks/Scope",
+          "name": "Noisy_Power_Scope",
+          "position": [
+            650,
+            510,
+            730,
+            565
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {},
+          "subsystem": "",
+          "sid": 12
+        },
+        {
+          "type": "ToWorkspace",
+          "source": "simulink/Sinks/To Workspace",
+          "name": "Noisy_Power_Log",
+          "position": [
+            850,
+            510,
+            1040,
+            555
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "VariableName": "power_noisy",
+            "SaveFormat": "Array",
+            "MaxDataPoints": "inf",
+            "Decimation": "1",
+            "SampleTime": "-1"
+          },
+          "subsystem": "",
+          "sid": 13
+        },
+        {
+          "type": "ToWorkspace",
+          "source": "simulink/Sinks/To Workspace",
+          "name": "Noisy_ADC_Trace_Log",
+          "position": [
+            650,
+            600,
+            850,
+            645
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "VariableName": "debug_noisy",
+            "SaveFormat": "Array",
+            "MaxDataPoints": "inf",
+            "Decimation": "1",
+            "SampleTime": "-1"
+          },
+          "subsystem": "",
+          "sid": 14
+        }
+      ],
+      "lines": [
+        {
+          "src": "Clean_ADC",
+          "srcPort": 1,
+          "dst": "Clean_Test",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Clean_Test",
+          "srcPort": 1,
+          "dst": "Clean_Levels_Scope",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Clean_Test",
+          "srcPort": 1,
+          "dst": "Clean_Levels_Log",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Clean_Test",
+          "srcPort": 2,
+          "dst": "Clean_Power_Scope",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Clean_Test",
+          "srcPort": 2,
+          "dst": "Clean_Power_Log",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Clean_Test",
+          "srcPort": 3,
+          "dst": "Clean_ADC_Trace_Log",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Noisy_ADC",
+          "srcPort": 1,
+          "dst": "Noisy_Test",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Noisy_Test",
+          "srcPort": 1,
+          "dst": "Noisy_Levels_Scope",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Noisy_Test",
+          "srcPort": 1,
+          "dst": "Noisy_Levels_Log",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Noisy_Test",
+          "srcPort": 2,
+          "dst": "Noisy_Power_Scope",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Noisy_Test",
+          "srcPort": 2,
+          "dst": "Noisy_Power_Log",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Noisy_Test",
+          "srcPort": 3,
+          "dst": "Noisy_ADC_Trace_Log",
+          "dstPort": 1,
+          "name": ""
+        }
+      ],
+      "notes": [
+        {
+          "text": "HYSTERESIS vs ORIGINAL PAM3 | identical clean and noisy inputs",
+          "position": [
+            40,
+            15
+          ]
+        },
+        {
+          "text": "Double-click a test subsystem to inspect its blocks. Scope vector order: Hysteresis, PAM3.",
+          "position": [
+            40,
+            42
+          ]
+        },
+        {
+          "text": "Power is hypothetical: 1 V per level, R=1 ohm by default, p=v^2/R. Binary +/-1 necessarily gives constant power.",
+          "position": [
+            40,
+            770
+          ]
+        },
+        {
+          "text": "START_SIMULINK_COMPARE: build -> run -> compare actual logged samples with MATLAB -> calculate THD and ripple.",
+          "position": [
+            40,
+            805
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clean_test",
+      "blocks": [
+        {
+          "type": "Inport",
+          "source": "simulink/Ports & Subsystems/In1",
+          "name": "ADC",
+          "position": [
+            35,
+            165,
+            65,
+            185
+          ],
+          "ports": [
+            0,
+            1
+          ],
+          "params": {
+            "Port": "1"
+          },
+          "subsystem": "",
+          "sid": 15
+        },
+        {
+          "type": "Bias",
+          "source": "simulink/Math Operations/Bias",
+          "name": "Remove_ADC_Offset",
+          "position": [
+            115,
+            55,
+            225,
+            100
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Bias": "-simple_cfg.adc_center"
+          },
+          "subsystem": "",
+          "sid": 16
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "Normalize_ADC",
+          "position": [
+            275,
+            55,
+            355,
+            100
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "1/simple_cfg.adc_gain"
+          },
+          "subsystem": "",
+          "sid": 17
+        },
+        {
+          "type": "Relay",
+          "source": "simulink/Discontinuities/Relay",
+          "name": "Hysteresis",
+          "position": [
+            410,
+            40,
+            535,
+            110
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "OnSwitchValue": "simple_cfg.hysteresis_on",
+            "OffSwitchValue": "simple_cfg.hysteresis_off",
+            "OnOutputValue": "1",
+            "OffOutputValue": "-1"
+          },
+          "subsystem": "",
+          "sid": 18
+        },
+        {
+          "type": "SubSystem",
+          "source": "built-in/SubSystem",
+          "name": "PAM3_Detector",
+          "position": [
+            240,
+            225,
+            535,
+            335
+          ],
+          "ports": [
+            1,
+            2
+          ],
+          "params": {},
+          "subsystem": "clean_pam3",
+          "sid": 19
+        },
+        {
+          "type": "Mux",
+          "source": "simulink/Signal Routing/Mux",
+          "name": "Levels_H_then_PAM3",
+          "position": [
+            635,
+            60,
+            640,
+            250
+          ],
+          "ports": [
+            2,
+            1
+          ],
+          "params": {
+            "Inputs": "2"
+          },
+          "subsystem": "",
+          "sid": 20
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "Levels_H_PAM3",
+          "position": [
+            900,
+            145,
+            930,
+            165
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "1"
+          },
+          "subsystem": "",
+          "sid": 21
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "H_Level_to_Volts",
+          "position": [
+            240,
+            400,
+            350,
+            445
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "simple_cfg.output_volts_per_level"
+          },
+          "subsystem": "",
+          "sid": 22
+        },
+        {
+          "type": "Math",
+          "source": "simulink/Math Operations/Math Function",
+          "name": "H_Voltage_Squared",
+          "position": [
+            410,
+            400,
+            500,
+            445
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Operator": "square"
+          },
+          "subsystem": "",
+          "sid": 23
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "H_Divide_by_R",
+          "position": [
+            550,
+            400,
+            650,
+            445
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "1/simple_cfg.resistance_ohm"
+          },
+          "subsystem": "",
+          "sid": 24
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "PAM3_Level_to_Volts",
+          "position": [
+            240,
+            510,
+            350,
+            555
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "simple_cfg.output_volts_per_level"
+          },
+          "subsystem": "",
+          "sid": 25
+        },
+        {
+          "type": "Math",
+          "source": "simulink/Math Operations/Math Function",
+          "name": "PAM3_Voltage_Squared",
+          "position": [
+            410,
+            510,
+            500,
+            555
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Operator": "square"
+          },
+          "subsystem": "",
+          "sid": 26
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "PAM3_Divide_by_R",
+          "position": [
+            550,
+            510,
+            650,
+            555
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "1/simple_cfg.resistance_ohm"
+          },
+          "subsystem": "",
+          "sid": 27
+        },
+        {
+          "type": "Mux",
+          "source": "simulink/Signal Routing/Mux",
+          "name": "Power_H_then_PAM3",
+          "position": [
+            760,
+            400,
+            765,
+            555
+          ],
+          "ports": [
+            2,
+            1
+          ],
+          "params": {
+            "Inputs": "2"
+          },
+          "subsystem": "",
+          "sid": 28
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "Power_H_PAM3_W",
+          "position": [
+            900,
+            470,
+            930,
+            490
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "2"
+          },
+          "subsystem": "",
+          "sid": 29
+        },
+        {
+          "type": "Mux",
+          "source": "simulink/Signal Routing/Mux",
+          "name": "ADC_and_Trace",
+          "position": [
+            635,
+            275,
+            640,
+            350
+          ],
+          "ports": [
+            2,
+            1
+          ],
+          "params": {
+            "Inputs": "2"
+          },
+          "subsystem": "",
+          "sid": 30
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "ADC_and_18_Trace_Values",
+          "position": [
+            900,
+            305,
+            930,
+            325
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "3"
+          },
+          "subsystem": "",
+          "sid": 31
+        }
+      ],
+      "lines": [
+        {
+          "src": "H_Level_to_Volts",
+          "srcPort": 1,
+          "dst": "H_Voltage_Squared",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "H_Voltage_Squared",
+          "srcPort": 1,
+          "dst": "H_Divide_by_R",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Level_to_Volts",
+          "srcPort": 1,
+          "dst": "PAM3_Voltage_Squared",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Voltage_Squared",
+          "srcPort": 1,
+          "dst": "PAM3_Divide_by_R",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "ADC",
+          "srcPort": 1,
+          "dst": "Remove_ADC_Offset",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Remove_ADC_Offset",
+          "srcPort": 1,
+          "dst": "Normalize_ADC",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Normalize_ADC",
+          "srcPort": 1,
+          "dst": "Hysteresis",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "ADC",
+          "srcPort": 1,
+          "dst": "PAM3_Detector",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Hysteresis",
+          "srcPort": 1,
+          "dst": "Levels_H_then_PAM3",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Detector",
+          "srcPort": 1,
+          "dst": "Levels_H_then_PAM3",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "Levels_H_then_PAM3",
+          "srcPort": 1,
+          "dst": "Levels_H_PAM3",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Hysteresis",
+          "srcPort": 1,
+          "dst": "H_Level_to_Volts",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Detector",
+          "srcPort": 1,
+          "dst": "PAM3_Level_to_Volts",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "H_Divide_by_R",
+          "srcPort": 1,
+          "dst": "Power_H_then_PAM3",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Divide_by_R",
+          "srcPort": 1,
+          "dst": "Power_H_then_PAM3",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "Power_H_then_PAM3",
+          "srcPort": 1,
+          "dst": "Power_H_PAM3_W",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "ADC",
+          "srcPort": 1,
+          "dst": "ADC_and_Trace",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Detector",
+          "srcPort": 2,
+          "dst": "ADC_and_Trace",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "ADC_and_Trace",
+          "srcPort": 1,
+          "dst": "ADC_and_18_Trace_Values",
+          "dstPort": 1,
+          "name": ""
+        }
+      ],
+      "notes": [
+        {
+          "text": "Both branches use the SAME 8-bit ADC sample. Top: native Relay. Bottom: original PAM3 receiver.",
+          "position": [
+            35,
+            5
+          ]
+        },
+        {
+          "text": "Levels are dimensionless. Only the lower power branches convert them to hypothetical volts.",
+          "position": [
+            35,
+            650
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clean_pam3",
+      "blocks": [
+        {
+          "type": "Inport",
+          "source": "simulink/Ports & Subsystems/In1",
+          "name": "ADC",
+          "position": [
+            35,
+            115,
+            65,
+            135
+          ],
+          "ports": [
+            0,
+            1
+          ],
+          "params": {
+            "Port": "1"
+          },
+          "subsystem": "",
+          "sid": 32
+        },
+        {
+          "type": "Constant",
+          "source": "simulink/Sources/Constant",
+          "name": "Real_Sample_Command",
+          "position": [
+            35,
+            210,
+            170,
+            250
+          ],
+          "ports": [
+            0,
+            1
+          ],
+          "params": {
+            "Value": "1",
+            "SampleTime": "simple_ts"
+          },
+          "subsystem": "",
+          "sid": 33
+        },
+        {
+          "type": "M-S-Function",
+          "source": "built-in/M-S-Function",
+          "name": "Original_Decoder",
+          "position": [
+            235,
+            95,
+            445,
+            245
+          ],
+          "ports": [
+            2,
+            1
+          ],
+          "params": {
+            "FunctionName": "pam3_sfun",
+            "Parameters": "simple_pam3_cfg"
+          },
+          "subsystem": "",
+          "sid": 34
+        },
+        {
+          "type": "Demux",
+          "source": "simulink/Signal Routing/Demux",
+          "name": "Valid_Symbol_Debug",
+          "position": [
+            505,
+            105,
+            510,
+            250
+          ],
+          "ports": [
+            1,
+            3
+          ],
+          "params": {
+            "Outputs": "[1 1 16]"
+          },
+          "subsystem": "",
+          "sid": 35
+        },
+        {
+          "type": "Terminator",
+          "source": "simulink/Sinks/Terminator",
+          "name": "Unused_Debug_Fields",
+          "position": [
+            575,
+            245,
+            595,
+            265
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {},
+          "subsystem": "",
+          "sid": 36
+        },
+        {
+          "type": "Switch",
+          "source": "simulink/Signal Routing/Switch",
+          "name": "Update_Only_When_Valid",
+          "position": [
+            680,
+            95,
+            745,
+            185
+          ],
+          "ports": [
+            3,
+            1
+          ],
+          "params": {
+            "Criteria": "u2 >= Threshold",
+            "Threshold": "0.5"
+          },
+          "subsystem": "",
+          "sid": 37
+        },
+        {
+          "type": "UnitDelay",
+          "source": "simulink/Discrete/Unit Delay",
+          "name": "Last_Valid_Symbol",
+          "position": [
+            675,
+            310,
+            785,
+            355
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "InitialCondition": "0",
+            "SampleTime": "simple_ts"
+          },
+          "subsystem": "",
+          "sid": 38
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "Held_Symbol",
+          "position": [
+            885,
+            130,
+            915,
+            150
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "1"
+          },
+          "subsystem": "",
+          "sid": 39
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "Trace_18_Values",
+          "position": [
+            885,
+            410,
+            915,
+            430
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "2"
+          },
+          "subsystem": "",
+          "sid": 40
+        }
+      ],
+      "lines": [
+        {
+          "src": "ADC",
+          "srcPort": 1,
+          "dst": "Original_Decoder",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Real_Sample_Command",
+          "srcPort": 1,
+          "dst": "Original_Decoder",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "Original_Decoder",
+          "srcPort": 1,
+          "dst": "Valid_Symbol_Debug",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Valid_Symbol_Debug",
+          "srcPort": 2,
+          "dst": "Update_Only_When_Valid",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Valid_Symbol_Debug",
+          "srcPort": 1,
+          "dst": "Update_Only_When_Valid",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "Valid_Symbol_Debug",
+          "srcPort": 3,
+          "dst": "Unused_Debug_Fields",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Last_Valid_Symbol",
+          "srcPort": 1,
+          "dst": "Update_Only_When_Valid",
+          "dstPort": 3,
+          "name": ""
+        },
+        {
+          "src": "Update_Only_When_Valid",
+          "srcPort": 1,
+          "dst": "Last_Valid_Symbol",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Update_Only_When_Valid",
+          "srcPort": 1,
+          "dst": "Held_Symbol",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Original_Decoder",
+          "srcPort": 1,
+          "dst": "Trace_18_Values",
+          "dstPort": 1,
+          "name": ""
+        }
+      ],
+      "notes": [
+        {
+          "text": "ORIGINAL PAM3: ADC -> slope / four thresholds -> spike filter -> edges / timing -> valid symbol",
+          "position": [
+            35,
+            15
+          ]
+        },
+        {
+          "text": "The original receiver is a stateful Level-2 MATLAB S-function. Open pam3_step.m to inspect its full algorithm.",
+          "position": [
+            35,
+            48
+          ]
+        },
+        {
+          "text": "Switch + Unit Delay explicitly hold the last valid symbol. Original processing latency is preserved.",
+          "position": [
+            35,
+            475
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noisy_test",
+      "blocks": [
+        {
+          "type": "Inport",
+          "source": "simulink/Ports & Subsystems/In1",
+          "name": "ADC",
+          "position": [
+            35,
+            165,
+            65,
+            185
+          ],
+          "ports": [
+            0,
+            1
+          ],
+          "params": {
+            "Port": "1"
+          },
+          "subsystem": "",
+          "sid": 41
+        },
+        {
+          "type": "Bias",
+          "source": "simulink/Math Operations/Bias",
+          "name": "Remove_ADC_Offset",
+          "position": [
+            115,
+            55,
+            225,
+            100
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Bias": "-simple_cfg.adc_center"
+          },
+          "subsystem": "",
+          "sid": 42
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "Normalize_ADC",
+          "position": [
+            275,
+            55,
+            355,
+            100
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "1/simple_cfg.adc_gain"
+          },
+          "subsystem": "",
+          "sid": 43
+        },
+        {
+          "type": "Relay",
+          "source": "simulink/Discontinuities/Relay",
+          "name": "Hysteresis",
+          "position": [
+            410,
+            40,
+            535,
+            110
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "OnSwitchValue": "simple_cfg.hysteresis_on",
+            "OffSwitchValue": "simple_cfg.hysteresis_off",
+            "OnOutputValue": "1",
+            "OffOutputValue": "-1"
+          },
+          "subsystem": "",
+          "sid": 44
+        },
+        {
+          "type": "SubSystem",
+          "source": "built-in/SubSystem",
+          "name": "PAM3_Detector",
+          "position": [
+            240,
+            225,
+            535,
+            335
+          ],
+          "ports": [
+            1,
+            2
+          ],
+          "params": {},
+          "subsystem": "noisy_pam3",
+          "sid": 45
+        },
+        {
+          "type": "Mux",
+          "source": "simulink/Signal Routing/Mux",
+          "name": "Levels_H_then_PAM3",
+          "position": [
+            635,
+            60,
+            640,
+            250
+          ],
+          "ports": [
+            2,
+            1
+          ],
+          "params": {
+            "Inputs": "2"
+          },
+          "subsystem": "",
+          "sid": 46
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "Levels_H_PAM3",
+          "position": [
+            900,
+            145,
+            930,
+            165
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "1"
+          },
+          "subsystem": "",
+          "sid": 47
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "H_Level_to_Volts",
+          "position": [
+            240,
+            400,
+            350,
+            445
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "simple_cfg.output_volts_per_level"
+          },
+          "subsystem": "",
+          "sid": 48
+        },
+        {
+          "type": "Math",
+          "source": "simulink/Math Operations/Math Function",
+          "name": "H_Voltage_Squared",
+          "position": [
+            410,
+            400,
+            500,
+            445
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Operator": "square"
+          },
+          "subsystem": "",
+          "sid": 49
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "H_Divide_by_R",
+          "position": [
+            550,
+            400,
+            650,
+            445
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "1/simple_cfg.resistance_ohm"
+          },
+          "subsystem": "",
+          "sid": 50
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "PAM3_Level_to_Volts",
+          "position": [
+            240,
+            510,
+            350,
+            555
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "simple_cfg.output_volts_per_level"
+          },
+          "subsystem": "",
+          "sid": 51
+        },
+        {
+          "type": "Math",
+          "source": "simulink/Math Operations/Math Function",
+          "name": "PAM3_Voltage_Squared",
+          "position": [
+            410,
+            510,
+            500,
+            555
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Operator": "square"
+          },
+          "subsystem": "",
+          "sid": 52
+        },
+        {
+          "type": "Gain",
+          "source": "simulink/Math Operations/Gain",
+          "name": "PAM3_Divide_by_R",
+          "position": [
+            550,
+            510,
+            650,
+            555
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "Gain": "1/simple_cfg.resistance_ohm"
+          },
+          "subsystem": "",
+          "sid": 53
+        },
+        {
+          "type": "Mux",
+          "source": "simulink/Signal Routing/Mux",
+          "name": "Power_H_then_PAM3",
+          "position": [
+            760,
+            400,
+            765,
+            555
+          ],
+          "ports": [
+            2,
+            1
+          ],
+          "params": {
+            "Inputs": "2"
+          },
+          "subsystem": "",
+          "sid": 54
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "Power_H_PAM3_W",
+          "position": [
+            900,
+            470,
+            930,
+            490
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "2"
+          },
+          "subsystem": "",
+          "sid": 55
+        },
+        {
+          "type": "Mux",
+          "source": "simulink/Signal Routing/Mux",
+          "name": "ADC_and_Trace",
+          "position": [
+            635,
+            275,
+            640,
+            350
+          ],
+          "ports": [
+            2,
+            1
+          ],
+          "params": {
+            "Inputs": "2"
+          },
+          "subsystem": "",
+          "sid": 56
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "ADC_and_18_Trace_Values",
+          "position": [
+            900,
+            305,
+            930,
+            325
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "3"
+          },
+          "subsystem": "",
+          "sid": 57
+        }
+      ],
+      "lines": [
+        {
+          "src": "H_Level_to_Volts",
+          "srcPort": 1,
+          "dst": "H_Voltage_Squared",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "H_Voltage_Squared",
+          "srcPort": 1,
+          "dst": "H_Divide_by_R",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Level_to_Volts",
+          "srcPort": 1,
+          "dst": "PAM3_Voltage_Squared",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Voltage_Squared",
+          "srcPort": 1,
+          "dst": "PAM3_Divide_by_R",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "ADC",
+          "srcPort": 1,
+          "dst": "Remove_ADC_Offset",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Remove_ADC_Offset",
+          "srcPort": 1,
+          "dst": "Normalize_ADC",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Normalize_ADC",
+          "srcPort": 1,
+          "dst": "Hysteresis",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "ADC",
+          "srcPort": 1,
+          "dst": "PAM3_Detector",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Hysteresis",
+          "srcPort": 1,
+          "dst": "Levels_H_then_PAM3",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Detector",
+          "srcPort": 1,
+          "dst": "Levels_H_then_PAM3",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "Levels_H_then_PAM3",
+          "srcPort": 1,
+          "dst": "Levels_H_PAM3",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Hysteresis",
+          "srcPort": 1,
+          "dst": "H_Level_to_Volts",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Detector",
+          "srcPort": 1,
+          "dst": "PAM3_Level_to_Volts",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "H_Divide_by_R",
+          "srcPort": 1,
+          "dst": "Power_H_then_PAM3",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Divide_by_R",
+          "srcPort": 1,
+          "dst": "Power_H_then_PAM3",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "Power_H_then_PAM3",
+          "srcPort": 1,
+          "dst": "Power_H_PAM3_W",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "ADC",
+          "srcPort": 1,
+          "dst": "ADC_and_Trace",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "PAM3_Detector",
+          "srcPort": 2,
+          "dst": "ADC_and_Trace",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "ADC_and_Trace",
+          "srcPort": 1,
+          "dst": "ADC_and_18_Trace_Values",
+          "dstPort": 1,
+          "name": ""
+        }
+      ],
+      "notes": [
+        {
+          "text": "Both branches use the SAME 8-bit ADC sample. Top: native Relay. Bottom: original PAM3 receiver.",
+          "position": [
+            35,
+            5
+          ]
+        },
+        {
+          "text": "Levels are dimensionless. Only the lower power branches convert them to hypothetical volts.",
+          "position": [
+            35,
+            650
+          ]
+        }
+      ]
+    },
+    {
+      "id": "noisy_pam3",
+      "blocks": [
+        {
+          "type": "Inport",
+          "source": "simulink/Ports & Subsystems/In1",
+          "name": "ADC",
+          "position": [
+            35,
+            115,
+            65,
+            135
+          ],
+          "ports": [
+            0,
+            1
+          ],
+          "params": {
+            "Port": "1"
+          },
+          "subsystem": "",
+          "sid": 58
+        },
+        {
+          "type": "Constant",
+          "source": "simulink/Sources/Constant",
+          "name": "Real_Sample_Command",
+          "position": [
+            35,
+            210,
+            170,
+            250
+          ],
+          "ports": [
+            0,
+            1
+          ],
+          "params": {
+            "Value": "1",
+            "SampleTime": "simple_ts"
+          },
+          "subsystem": "",
+          "sid": 59
+        },
+        {
+          "type": "M-S-Function",
+          "source": "built-in/M-S-Function",
+          "name": "Original_Decoder",
+          "position": [
+            235,
+            95,
+            445,
+            245
+          ],
+          "ports": [
+            2,
+            1
+          ],
+          "params": {
+            "FunctionName": "pam3_sfun",
+            "Parameters": "simple_pam3_cfg"
+          },
+          "subsystem": "",
+          "sid": 60
+        },
+        {
+          "type": "Demux",
+          "source": "simulink/Signal Routing/Demux",
+          "name": "Valid_Symbol_Debug",
+          "position": [
+            505,
+            105,
+            510,
+            250
+          ],
+          "ports": [
+            1,
+            3
+          ],
+          "params": {
+            "Outputs": "[1 1 16]"
+          },
+          "subsystem": "",
+          "sid": 61
+        },
+        {
+          "type": "Terminator",
+          "source": "simulink/Sinks/Terminator",
+          "name": "Unused_Debug_Fields",
+          "position": [
+            575,
+            245,
+            595,
+            265
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {},
+          "subsystem": "",
+          "sid": 62
+        },
+        {
+          "type": "Switch",
+          "source": "simulink/Signal Routing/Switch",
+          "name": "Update_Only_When_Valid",
+          "position": [
+            680,
+            95,
+            745,
+            185
+          ],
+          "ports": [
+            3,
+            1
+          ],
+          "params": {
+            "Criteria": "u2 >= Threshold",
+            "Threshold": "0.5"
+          },
+          "subsystem": "",
+          "sid": 63
+        },
+        {
+          "type": "UnitDelay",
+          "source": "simulink/Discrete/Unit Delay",
+          "name": "Last_Valid_Symbol",
+          "position": [
+            675,
+            310,
+            785,
+            355
+          ],
+          "ports": [
+            1,
+            1
+          ],
+          "params": {
+            "InitialCondition": "0",
+            "SampleTime": "simple_ts"
+          },
+          "subsystem": "",
+          "sid": 64
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "Held_Symbol",
+          "position": [
+            885,
+            130,
+            915,
+            150
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "1"
+          },
+          "subsystem": "",
+          "sid": 65
+        },
+        {
+          "type": "Outport",
+          "source": "simulink/Ports & Subsystems/Out1",
+          "name": "Trace_18_Values",
+          "position": [
+            885,
+            410,
+            915,
+            430
+          ],
+          "ports": [
+            1,
+            0
+          ],
+          "params": {
+            "Port": "2"
+          },
+          "subsystem": "",
+          "sid": 66
+        }
+      ],
+      "lines": [
+        {
+          "src": "ADC",
+          "srcPort": 1,
+          "dst": "Original_Decoder",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Real_Sample_Command",
+          "srcPort": 1,
+          "dst": "Original_Decoder",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "Original_Decoder",
+          "srcPort": 1,
+          "dst": "Valid_Symbol_Debug",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Valid_Symbol_Debug",
+          "srcPort": 2,
+          "dst": "Update_Only_When_Valid",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Valid_Symbol_Debug",
+          "srcPort": 1,
+          "dst": "Update_Only_When_Valid",
+          "dstPort": 2,
+          "name": ""
+        },
+        {
+          "src": "Valid_Symbol_Debug",
+          "srcPort": 3,
+          "dst": "Unused_Debug_Fields",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Last_Valid_Symbol",
+          "srcPort": 1,
+          "dst": "Update_Only_When_Valid",
+          "dstPort": 3,
+          "name": ""
+        },
+        {
+          "src": "Update_Only_When_Valid",
+          "srcPort": 1,
+          "dst": "Last_Valid_Symbol",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Update_Only_When_Valid",
+          "srcPort": 1,
+          "dst": "Held_Symbol",
+          "dstPort": 1,
+          "name": ""
+        },
+        {
+          "src": "Original_Decoder",
+          "srcPort": 1,
+          "dst": "Trace_18_Values",
+          "dstPort": 1,
+          "name": ""
+        }
+      ],
+      "notes": [
+        {
+          "text": "ORIGINAL PAM3: ADC -> slope / four thresholds -> spike filter -> edges / timing -> valid symbol",
+          "position": [
+            35,
+            15
+          ]
+        },
+        {
+          "text": "The original receiver is a stateful Level-2 MATLAB S-function. Open pam3_step.m to inspect its full algorithm.",
+          "position": [
+            35,
+            48
+          ]
+        },
+        {
+          "text": "Switch + Unit Delay explicitly hold the last valid symbol. Original processing latency is preserved.",
+          "position": [
+            35,
+            475
+          ]
+        }
+      ]
+    }
+  ],
+  "callback": "simple_root=fileparts(fileparts(get_param(bdroot,'FileName'))); addpath(simple_root,fullfile(simple_root,'PAM3_original'),fullfile(simple_root,'simulink')); prepare_simulink_comparison(bdroot);",
+  "matlab_compiled": false,
+  "simulink_executed": false
+}

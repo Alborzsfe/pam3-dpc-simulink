@@ -1,0 +1,80 @@
+{
+  "status": "Stage 2 research suite implemented; native execution pending",
+  "templates_with_unchanged_sector_switching_code": 7,
+  "syntax_check": "MISS_HIT: 30 files, MATLAB 2022a grammar, no syntax errors",
+  "python_compatibility_samples": 100009,
+  "python_compatibility_mismatches": 0,
+  "source_model_sha256": "10615c2f27df563b9018832be180a8c1a9f56628479a68c0d43668c7325d08c7",
+  "native_Simulink_executed": false,
+  "offline_approximation_is_not_Simulink": true,
+  "new_measurement_input": "predictive variant only: Vdc from existing sensor",
+  "original_plant_unchanged": true,
+  "user_reported_native_logic_validation": "PASS: 100011 compatibility samples, 4000 whole-controller ticks, predictor pass-through/bounds.",
+  "logging_fix": "Reuse logger sinks; stable endpoint references; verify/reuse existing connection; repair only target branch; regression test supplied.",
+  "scenario_update": {
+    "scenarios": [
+      {
+        "fs_Hz": 20000,
+        "L_H": 0.015
+      },
+      {
+        "fs_Hz": 40000,
+        "L_H": 0.01
+      }
+    ],
+    "entry_point": "RUN_PROFESSOR_SCENARIOS",
+    "native_Simulink_executed_for_update": false,
+    "plant_and_predictor_inductance_synchronized": true,
+    "separate_timestamped_output_folders": true
+  },
+  "sensor_revision": {
+    "native_Simulink_executed": false,
+    "syntax_check": "29 rendered MATLAB files; MISS_HIT 2022a grammar; no errors",
+    "scenarios": [
+      [
+        20000,
+        0.01
+      ],
+      [
+        20000,
+        0.015
+      ],
+      [
+        40000,
+        0.01
+      ],
+      [
+        40000,
+        0.015
+      ]
+    ],
+    "noise_location": "three-phase voltage/current measurement paths before power and sector calculation",
+    "noise_std_units": [
+      "V per phase",
+      "A per phase"
+    ],
+    "noise_std": [
+      0.5,
+      0.05
+    ],
+    "P_Q_noise_disabled": true,
+    "physical_power_logging_separate": true,
+    "switching_gate": "each leg and mean within +/-5 percent; no automatic rate tuning",
+    "entry_point": "RUN_PROFESSOR_SCENARIOS",
+    "runs": 52
+  },
+  "research_stage2": {
+    "native_MATLAB_Simulink_executed": false,
+    "proposed_algorithm_unchanged": true,
+    "source_model_unchanged": true,
+    "baseline_band_calibration": "switching-only, independent seed, frozen per fs/L",
+    "reference_mode": "shared fixed-power/independent P-Q steps; outer voltage PI disconnected from DPC references in research copies",
+    "physical_grid_harmonics": "equal fifth/seventh contributions to total 3%/5% THD",
+    "native_smoke_test": "SMOKE_TEST_RESEARCH_STAGE2: six short simulations supplied, not executed here",
+    "entry_point": "RUN_RESEARCH_STAGE2('all')",
+    "algorithm_audit": "ALGORITHM_AUDIT_FA.md",
+    "advanced_confidence_persistence_added": false,
+    "syntax_check": "40 MATLAB files, MISS_HIT 2022a grammar, no errors",
+    "offline_analytic_fixtures": "passed; not native MATLAB or converter performance"
+  }
+}

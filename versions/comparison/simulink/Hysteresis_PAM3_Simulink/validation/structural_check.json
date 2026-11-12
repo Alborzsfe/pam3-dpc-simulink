@@ -1,0 +1,8 @@
+{
+  "systems": 5,
+  "blocks": 66,
+  "all_inputs_connected": true,
+  "draft_slx_created": "hysteresis_pam3_compare.slx",
+  "matlab_compiled": false,
+  "simulink_executed": false
+}

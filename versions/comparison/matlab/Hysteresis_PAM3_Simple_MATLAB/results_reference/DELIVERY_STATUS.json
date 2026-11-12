@@ -1,0 +1,15 @@
+{
+  "runtime_product": "GNU Octave",
+  "runtime_version": "8.4.0",
+  "matlab_executed": false,
+  "simulink_executed": false,
+  "numerical_tests_passed": true,
+  "native_m_file_plots_rendered": true,
+  "original_pam3_files_byte_identical": true,
+  "original_captures_checked": 30,
+  "original_samples_checked": 17140,
+  "independent_check": "results_reference/independent_check.json",
+  "plot_visual_inspection": "Both exported PNG figures inspected; readable axes, legends and waveforms.",
+  "release": "1.1 MATLAB structure-array fix",
+  "four_case_regression_outputs_and_rows_unchanged": true
+}

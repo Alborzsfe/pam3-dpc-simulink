@@ -1,0 +1,22 @@
+{
+  "seeds": 12,
+  "length": 12000,
+  "seed_base": 293847,
+  "pilots": [
+    5,
+    5,
+    6
+  ],
+  "noise_sigma": 0.18,
+  "assumption": "fixed affine geometry; synthetic additive Gaussian noise",
+  "candidate_constants": {
+    "age_time": 96,
+    "alpha": 0.025,
+    "low_mid_guard": 0.46,
+    "high_guard": 0.37,
+    "asymmetry_cutoff": 0.2,
+    "low_drift_cutoff": 0.14,
+    "drought_age": 96,
+    "middle_drift_cutoff": 0.14
+  }
+}

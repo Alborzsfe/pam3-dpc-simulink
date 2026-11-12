@@ -1,0 +1,13 @@
+test_after_terminal (test_host.HostTests.test_after_terminal) ... ok
+test_bad_count (test_host.HostTests.test_bad_count) ... ok
+test_frame_order (test_host.HostTests.test_frame_order) ... ok
+test_illegal_code (test_host.HostTests.test_illegal_code) ... ok
+test_padding (test_host.HostTests.test_padding) ... ok
+test_reserved (test_host.HostTests.test_reserved) ... ok
+test_truncated (test_host.HostTests.test_truncated) ... ok
+test_two_channels_multirecord_empty_and_full (test_host.HostTests.test_two_channels_multirecord_empty_and_full) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

@@ -1,0 +1,2 @@
+Real current/THD/P figures and comparison metrics are created here only after successful native runs.
+This package contains no prefilled converter performance plots.

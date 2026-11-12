@@ -1,0 +1,4 @@
+R2024b input-array revision 2026-10-15
+Numerical and callback test-double validation passed.
+Native Simulink and converter execution NOT verified in preparation environment.
+Extract complete package into a fresh folder; do not combine individual revisions.
