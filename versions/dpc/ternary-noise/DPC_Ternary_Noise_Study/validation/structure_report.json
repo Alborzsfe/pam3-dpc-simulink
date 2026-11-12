@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "simulink_executed": false,
+  "source_sha256": "c637ed60cde46882b00b42aefcaf2d51796233b7814fdf6bbf72d947dcafd9a9",
+  "matched_physical_source_connections": 3,
+  "matlab_files": 51,
+  "missing_custom_helpers": 0,
+  "noisy_table_contexts": 648,
+  "noisy_stream_samples": 216,
+  "included_native_performance_results": false
+}

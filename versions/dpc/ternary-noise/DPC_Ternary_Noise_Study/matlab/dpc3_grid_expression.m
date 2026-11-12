@@ -1,0 +1,9 @@
+function expression = dpc3_grid_expression(cfg,s,phase)
+% Scalar Simulink Fcn expression; analytically driven by Clock, no file/ZOH.
+phi = [0,-2*pi/3,2*pi/3];
+theta = sprintf('(%.17g*u+(%.17g))',2*pi*cfg.line_frequency,phi(phase));
+expression = sprintf(['(u>=%.17g)*%.17g*(%.17g*sin(5*%s)+' ...
+    '%.17g*sin(7*%s)+%.17g*sin(%.17g*u)*sin(%s))'], ...
+    cfg.disturbance_start,cfg.phase_rms_voltage*sqrt(2),s.h5_pu,theta, ...
+    s.h7_pu,theta,s.ripple_pu,2*pi*s.ripple_hz,theta);
+end

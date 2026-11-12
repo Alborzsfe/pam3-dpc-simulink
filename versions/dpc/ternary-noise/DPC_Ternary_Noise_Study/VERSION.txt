@@ -1,0 +1,7 @@
+DPC Ternary Professor revision 2
+Fix: independent binary Relay reference includes equality at +/-1, grounded in user's R2024b capture.
+All dependent native fixtures regenerated; native assertions retained.
+Start command: START_DPC_TERNARY
+True ternary classifiers, explicit nine-state dynamic table, original four corners.
+Native source Relay + original table reference, bypass and full-plant binary limit checks.
+Numerical and callback test-double checks passed; native execution not performed here.
