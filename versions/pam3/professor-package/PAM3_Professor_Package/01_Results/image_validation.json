@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "rendering": "Pillow raster result views, precise Matplotlib charts",
+  "not_live_instrument_screenshots": true,
+  "images": [
+    {
+      "file": "01_Signal_Decoding.png",
+      "size": [
+        2400,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "file": "02_Noise_Performance.png",
+      "size": [
+        2400,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "file": "03_Thresholds_and_DC.png",
+      "size": [
+        2400,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "file": "04_RTL_Verification.png",
+      "size": [
+        2400,
+        1500
+      ],
+      "passed": true
+    },
+    {
+      "file": "05_FPGA_Synthesis.png",
+      "size": [
+        2400,
+        1500
+      ],
+      "passed": true
+    }
+  ]
+}

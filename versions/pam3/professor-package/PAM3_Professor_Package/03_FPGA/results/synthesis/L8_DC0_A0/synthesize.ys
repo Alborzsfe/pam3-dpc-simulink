@@ -1,0 +1,11 @@
+read_verilog -sv "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_analyzer_core.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_dual_core.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_host_mux.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_symbol_packer.sv"
+chparam -set LANES 8 -set DC_ENABLE 0 -set ADAPTIVE 0 pam3_analyzer_core
+synth_xilinx -top pam3_analyzer_core -family xc7 -noiopad -noclkbuf -run begin:map_dsp
+techmap -map +/cmp2lut.v -map +/cmp2lcu.v -D LUT_WIDTH=6
+alumacc; opt; memory -nomap; opt_clean
+synth_xilinx -top pam3_analyzer_core -family xc7 -noiopad -noclkbuf -run map_memory:
+check -assert
+select -assert-none t:$dlatch t:$_DLATCH_* t:LDCE t:LDPE
+tee -o statistics.json stat -json
+write_verilog -noattr mapped_netlist.v
+write_edif mapped_netlist.edf

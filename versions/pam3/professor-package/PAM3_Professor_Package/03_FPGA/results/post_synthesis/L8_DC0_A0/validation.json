@@ -1,0 +1,11 @@
+{
+  "configuration": "L8_DC0_A0",
+  "passed": true,
+  "technology": "XC7 functional primitive simulation, no timing delays",
+  "channel_frames": 76,
+  "channel_samples_checked": 3170,
+  "symbols_checked": 297,
+  "records": 76,
+  "elapsed_seconds": 135.05,
+  "simulation": "PASS frames=76 cycles=693 records=76 source_stalls=306 sink_stalls=336\n/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/tests/tb_analyzer.sv:59: $finish called at 6956000 (1ps)"
+}
