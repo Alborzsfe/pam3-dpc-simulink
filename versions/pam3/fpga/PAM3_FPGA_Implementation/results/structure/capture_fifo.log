@@ -1,0 +1,305 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.33 (git sha1 2584903a060)
+
+
+-- Executing script file `/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/results/structure/capture_fifo.ys' --
+
+1. Executing Verilog-2005 frontend: /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_analyzer_core.sv
+Parsing SystemVerilog input from `/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_analyzer_core.sv' to AST representation.
+Generating RTLIL representation for module `\pam3_analyzer_core'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv
+Parsing SystemVerilog input from `/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv' to AST representation.
+Generating RTLIL representation for module `\pam3_capture_fifo'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_dual_core.sv
+Parsing SystemVerilog input from `/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_dual_core.sv' to AST representation.
+Generating RTLIL representation for module `\pam3_dual_core'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_host_mux.sv
+Parsing SystemVerilog input from `/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_host_mux.sv' to AST representation.
+Generating RTLIL representation for module `\pam3_host_mux'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv
+Parsing SystemVerilog input from `/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv' to AST representation.
+Generating RTLIL representation for module `\pam3_stream_core'.
+Warning: Replacing memory \pending_mid with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:275
+Warning: Replacing memory \level_memory with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:274
+Warning: Replacing memory \raw_history with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:273
+Warning: Replacing memory \dc_history with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:272
+Warning: Replacing memory \counts with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:271
+Warning: Replacing memory \sums with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:271
+Warning: Replacing memory \means with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:270
+Warning: Replacing memory \ncounts with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:118
+Warning: Replacing memory \nsums with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:118
+Warning: Replacing memory \nmeans with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:118
+Warning: Replacing memory \npending_mid with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:227, /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:117
+Warning: Replacing memory \nlevel_memory with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:249, /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:116
+Warning: Replacing memory \nraw_history with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:205, /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:115
+Warning: Replacing memory \ndc_history with list of registers. See /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv:114
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_symbol_packer.sv
+Parsing SystemVerilog input from `/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_symbol_packer.sv' to AST representation.
+Generating RTLIL representation for module `\pam3_symbol_packer'.
+Successfully finished Verilog frontend.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \pam3_capture_fifo
+
+7.2. Analyzing design hierarchy..
+Top module:  \pam3_capture_fifo
+Removing unused module `\pam3_symbol_packer'.
+Removing unused module `\pam3_stream_core'.
+Removing unused module `\pam3_host_mux'.
+Removing unused module `\pam3_dual_core'.
+Removing unused module `\pam3_analyzer_core'.
+Removed 5 unused modules.
+
+8. Executing PROC pass (convert processes to netlists).
+
+8.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+8.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 3 switch rules as full_case in process $proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9 in module pam3_capture_fifo.
+Removed a total of 0 dead cases.
+
+8.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 3 assignments to connections.
+
+8.4. Executing PROC_INIT pass (extract init attributes).
+
+8.5. Executing PROC_ARST pass (detect async resets in processes).
+
+8.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~6 debug messages>
+
+8.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+     1/11: $2$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_EN[132:0]$18
+     2/11: $2$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_DATA[132:0]$17
+     3/11: $2$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_ADDR[7:0]$16
+     4/11: $0\count[8:0]
+     5/11: $1$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_EN[132:0]$15
+     6/11: $1$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_DATA[132:0]$14
+     7/11: $1$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_ADDR[7:0]$13
+     8/11: $0\wr[7:0]
+     9/11: $0\rd[7:0]
+    10/11: $0\dropped_beats[31:0]
+    11/11: $0\overflow[0:0]
+
+8.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+8.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pam3_capture_fifo.\overflow' using process `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+  created $dff cell `$procdff$554' with positive edge clock.
+Creating register for signal `\pam3_capture_fifo.\dropped_beats' using process `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+  created $dff cell `$procdff$555' with positive edge clock.
+Creating register for signal `\pam3_capture_fifo.\rd' using process `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+  created $dff cell `$procdff$556' with positive edge clock.
+Creating register for signal `\pam3_capture_fifo.\wr' using process `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+  created $dff cell `$procdff$557' with positive edge clock.
+Creating register for signal `\pam3_capture_fifo.\count' using process `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+  created $dff cell `$procdff$558' with positive edge clock.
+Creating register for signal `\pam3_capture_fifo.$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_ADDR' using process `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+  created $dff cell `$procdff$559' with positive edge clock.
+Creating register for signal `\pam3_capture_fifo.$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_DATA' using process `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+  created $dff cell `$procdff$560' with positive edge clock.
+Creating register for signal `\pam3_capture_fifo.$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_EN' using process `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+  created $dff cell `$procdff$561' with positive edge clock.
+
+8.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+8.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 6 empty switches in `\pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+Removing empty process `pam3_capture_fifo.$proc$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:21$9'.
+Cleaned up 6 empty switches.
+
+8.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pam3_capture_fifo.
+<suppressed ~2 debug messages>
+
+9. Executing OPT pass (performing simple optimizations).
+
+9.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pam3_capture_fifo.
+
+9.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pam3_capture_fifo'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+9.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pam3_capture_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$513.
+    dead port 1/2 on $mux $procmux$507.
+    dead port 1/2 on $mux $procmux$501.
+Removed 3 multiplexer ports.
+<suppressed ~8 debug messages>
+
+9.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pam3_capture_fifo.
+    Consolidated identical input bits for $mux cell $procmux$498:
+      Old ports: A=133'0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, B=133'1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111, Y=$procmux$498_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$498_Y [0]
+      New connections: $procmux$498_Y [132:1] = { $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] $procmux$498_Y [0] }
+  Optimizing cells in module \pam3_capture_fifo.
+    Consolidated identical input bits for $mux cell $procmux$523:
+      Old ports: A=$2$memwr$\memory$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$1_EN[132:0]$18, B=133'0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, Y=$procmux$523_Y
+      New ports: A=$procmux$498_Y [0], B=1'0, Y=$procmux$523_Y [0]
+      New connections: $procmux$523_Y [132:1] = { $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] $procmux$523_Y [0] }
+  Optimizing cells in module \pam3_capture_fifo.
+Performed a total of 2 changes.
+
+9.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pam3_capture_fifo'.
+Removed a total of 0 cells.
+
+9.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$554 ($dff) from module pam3_capture_fifo (D = $procmux$549_Y, Q = \overflow, rval = 1'0).
+Adding EN signal on $auto$ff.cc:266:slice$563 ($sdff) from module pam3_capture_fifo (D = 1'1, Q = \overflow).
+Adding SRST signal on $procdff$555 ($dff) from module pam3_capture_fifo (D = $procmux$544_Y, Q = \dropped_beats, rval = 0).
+Adding EN signal on $auto$ff.cc:266:slice$565 ($sdff) from module pam3_capture_fifo (D = $add$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:29$26_Y, Q = \dropped_beats).
+Adding SRST signal on $procdff$556 ($dff) from module pam3_capture_fifo (D = $procmux$537_Y, Q = \rd, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$569 ($sdff) from module pam3_capture_fifo (D = $add$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:25$20_Y, Q = \rd).
+Adding SRST signal on $procdff$557 ($dff) from module pam3_capture_fifo (D = $procmux$532_Y, Q = \wr, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$571 ($sdff) from module pam3_capture_fifo (D = $add$/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv:24$19_Y, Q = \wr).
+Adding SRST signal on $procdff$558 ($dff) from module pam3_capture_fifo (D = $procmux$516_Y, Q = \count, rval = 9'000000000).
+Adding EN signal on $auto$ff.cc:266:slice$573 ($sdff) from module pam3_capture_fifo (D = $procmux$516_Y, Q = \count).
+
+9.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pam3_capture_fifo..
+Removed 13 unused cells and 54 unused wires.
+<suppressed ~14 debug messages>
+
+9.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pam3_capture_fifo.
+<suppressed ~1 debug messages>
+
+9.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+9.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \pam3_capture_fifo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~4 debug messages>
+
+9.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \pam3_capture_fifo.
+Performed a total of 0 changes.
+
+9.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\pam3_capture_fifo'.
+Removed a total of 0 cells.
+
+9.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+9.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pam3_capture_fifo..
+
+9.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pam3_capture_fifo.
+
+9.16. Finished OPT passes. (There is nothing left to do.)
+
+10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pam3_capture_fifo..
+
+12. Executing CHECK pass (checking for obvious problems).
+Checking module pam3_capture_fifo...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.33 (git sha1 2584903a060)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\pam3_capture_fifo": {
+         "num_wires":         36,
+         "num_wire_bits":     972,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 340,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         30,
+         "num_cells_by_type": {
+            "$add": 4,
+            "$eq": 2,
+            "$logic_and": 3,
+            "$logic_not": 1,
+            "$logic_or": 1,
+            "$lt": 1,
+            "$mem_v2": 1,
+            "$mux": 6,
+            "$ne": 1,
+            "$pmux": 1,
+            "$reduce_and": 1,
+            "$reduce_bool": 2,
+            "$sdffe": 5,
+            "$sub": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         36,
+         "num_wire_bits":     972,
+         "num_pub_wires":     15,
+         "num_pub_wire_bits": 340,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         30,
+         "num_cells_by_type": {
+            "$add": 4,
+            "$eq": 2,
+            "$logic_and": 3,
+            "$logic_not": 1,
+            "$logic_or": 1,
+            "$lt": 1,
+            "$mem_v2": 1,
+            "$mux": 6,
+            "$ne": 1,
+            "$pmux": 1,
+            "$reduce_and": 1,
+            "$reduce_bool": 2,
+            "$sdffe": 5,
+            "$sub": 1
+         }
+      }
+}
+

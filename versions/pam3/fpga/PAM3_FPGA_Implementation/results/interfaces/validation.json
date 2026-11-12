@@ -1,0 +1,20 @@
+{
+  "all_passed": true,
+  "tests": [
+    {
+      "test": "tb_fifo",
+      "passed": true,
+      "output": "PASS fifo checked=2606 dropped=1940 cycles=6000\n/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/tests/tb_fifo.sv:37: $finish called at 60026000 (1ps)"
+    },
+    {
+      "test": "tb_protocol",
+      "passed": true,
+      "output": "PASS protocol continuous_beats=100 continuous_samples=800\n/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/tests/tb_protocol.sv:40: $finish called at 1330000 (1ps)"
+    },
+    {
+      "test": "host_parser_unittest",
+      "passed": true,
+      "output": "test_after_terminal (test_host.HostTests.test_after_terminal) ... ok\ntest_bad_count (test_host.HostTests.test_bad_count) ... ok\ntest_frame_order (test_host.HostTests.test_frame_order) ... ok\ntest_illegal_code (test_host.HostTests.test_illegal_code) ... ok\ntest_padding (test_host.HostTests.test_padding) ... ok\ntest_reserved (test_host.HostTests.test_reserved) ... ok\ntest_truncated (test_host.HostTests.test_truncated) ... ok\ntest_two_channels_multirecord_empty_and_full (test_host.HostTests.test_two_channels_multirecord_empty_and_full) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.000s\n\nOK"
+    }
+  ]
+}

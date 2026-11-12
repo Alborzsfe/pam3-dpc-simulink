@@ -1,0 +1,10 @@
+read_verilog -sv "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_analyzer_core.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_capture_fifo.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_dual_core.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_host_mux.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_stream_core.sv" "/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/rtl/pam3_symbol_packer.sv"
+chparam -set LANES 8 -set DC_ENABLE 1 -set ADAPTIVE 1 pam3_analyzer_core
+hierarchy -check -top pam3_analyzer_core
+proc
+opt
+memory_collect
+opt_clean
+check -assert
+select -assert-none t:$dlatch t:$_DLATCH_*
+tee -o L8_DC1_A1_statistics.json stat -json

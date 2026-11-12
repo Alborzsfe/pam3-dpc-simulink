@@ -1,0 +1,157 @@
+{
+   "creator": "Yosys 0.33 (git sha1 2584903a060)",
+   "invocation": "stat -json ",
+   "modules": {
+      "$paramod$3411077f76231fdf04381a67c2c9c77b0959e736\\pam3_stream_core": {
+         "num_wires":         4771,
+         "num_wire_bits":     38404,
+         "num_pub_wires":     94,
+         "num_pub_wire_bits": 2220,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4827,
+         "num_cells_by_type": {
+            "$add": 34,
+            "$and": 16,
+            "$eq": 546,
+            "$ge": 32,
+            "$gt": 51,
+            "$le": 9,
+            "$logic_and": 239,
+            "$logic_not": 44,
+            "$logic_or": 66,
+            "$lt": 64,
+            "$mux": 2856,
+            "$ne": 50,
+            "$neg": 16,
+            "$not": 36,
+            "$or": 16,
+            "$pmux": 264,
+            "$reduce_and": 6,
+            "$reduce_bool": 3,
+            "$reduce_or": 282,
+            "$sdff": 49,
+            "$sdffe": 67,
+            "$shift": 24,
+            "$shiftx": 8,
+            "$sub": 49
+         }
+      },
+      "$paramod$7c00cd5e6b8c7bc1b1391f1c0a6a3f22c52a2116\\pam3_dual_core": {
+         "num_wires":         27,
+         "num_wire_bits":     1285,
+         "num_pub_wires":     26,
+         "num_pub_wire_bits": 1284,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$logic_and": 3,
+            "$paramod$3411077f76231fdf04381a67c2c9c77b0959e736\\pam3_stream_core": 2
+         }
+      },
+      "$paramod\\pam3_symbol_packer\\LANES=s32'00000000000000000000000000001000": {
+         "num_wires":         140,
+         "num_wire_bits":     5756,
+         "num_pub_wires":     23,
+         "num_pub_wire_bits": 408,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         131,
+         "num_cells_by_type": {
+            "$add": 8,
+            "$and": 8,
+            "$eq": 1,
+            "$ge": 1,
+            "$le": 1,
+            "$logic_and": 3,
+            "$logic_not": 3,
+            "$logic_or": 2,
+            "$mux": 48,
+            "$ne": 1,
+            "$neg": 8,
+            "$not": 9,
+            "$or": 8,
+            "$reduce_and": 3,
+            "$sdff": 3,
+            "$sdffe": 7,
+            "$shift": 16,
+            "$sub": 1
+         }
+      },
+      "\\pam3_analyzer_core": {
+         "num_wires":         37,
+         "num_wire_bits":     602,
+         "num_pub_wires":     37,
+         "num_pub_wire_bits": 602,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         4,
+         "num_cells_by_type": {
+            "$paramod$7c00cd5e6b8c7bc1b1391f1c0a6a3f22c52a2116\\pam3_dual_core": 1,
+            "$paramod\\pam3_symbol_packer\\LANES=s32'00000000000000000000000000001000": 2,
+            "pam3_host_mux": 1
+         }
+      },
+      "\\pam3_host_mux": {
+         "num_wires":         36,
+         "num_wire_bits":     617,
+         "num_pub_wires":     21,
+         "num_pub_wire_bits": 348,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         23,
+         "num_cells_by_type": {
+            "$logic_and": 5,
+            "$logic_not": 3,
+            "$logic_or": 3,
+            "$mux": 6,
+            "$reduce_and": 1,
+            "$reduce_bool": 1,
+            "$sdffe": 4
+         }
+      }
+   },
+      "design": {
+         "num_wires":         9922,
+         "num_wire_bits":     90824,
+         "num_pub_wires":     318,
+         "num_pub_wire_bits": 7490,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         9942,
+         "num_cells_by_type": {
+            "$add": 84,
+            "$and": 48,
+            "$eq": 1094,
+            "$ge": 66,
+            "$gt": 102,
+            "$le": 20,
+            "$logic_and": 492,
+            "$logic_not": 97,
+            "$logic_or": 139,
+            "$lt": 128,
+            "$mux": 5814,
+            "$ne": 102,
+            "$neg": 48,
+            "$not": 90,
+            "$or": 48,
+            "$pmux": 528,
+            "$reduce_and": 19,
+            "$reduce_bool": 7,
+            "$reduce_or": 564,
+            "$sdff": 104,
+            "$sdffe": 152,
+            "$shift": 80,
+            "$shiftx": 16,
+            "$sub": 100
+         }
+      }
+}
+

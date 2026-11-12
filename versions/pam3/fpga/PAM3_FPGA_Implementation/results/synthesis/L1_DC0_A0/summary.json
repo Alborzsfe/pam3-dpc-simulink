@@ -1,0 +1,27 @@
+{
+  "configuration": "L1_DC0_A0",
+  "tool": "Yosys 0.33 (git sha1 2584903a060)",
+  "family": "Xilinx 7-series (XC7), generic mapping, no physical part selected",
+  "elapsed_seconds": 12.11,
+  "check_passed": true,
+  "inferred_latches": 0,
+  "flow": "synth_xilinx with optional SAT resource-sharing optimization omitted",
+  "cell_counts": {
+    "CARRY4": 378,
+    "FDRE": 1797,
+    "FDSE": 4,
+    "INV": 222,
+    "LUT1": 70,
+    "LUT2": 455,
+    "LUT3": 361,
+    "LUT4": 258,
+    "LUT5": 667,
+    "LUT6": 983,
+    "MUXF7": 110,
+    "MUXF8": 48
+  },
+  "total_cells": 5353,
+  "LUT_cells": 2794,
+  "FF_cells": 1801,
+  "scope": "Technology-mapped netlist only; no place/route, frequency, electrical I/O or board execution proof"
+}

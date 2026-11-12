@@ -1,0 +1,2 @@
+PASS protocol continuous_beats=100 continuous_samples=800
+/workspace/scratch/f9bc06d8d963/output/PAM3_FPGA_Implementation/tests/tb_protocol.sv:40: $finish called at 1330000 (1ps)
