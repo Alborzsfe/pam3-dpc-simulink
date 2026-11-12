@@ -1,0 +1,16 @@
+source_archive	archive_sha256	file_count	extracted_path	snapshot_branch	description
+PAM3_Patent_Simulation.zip	b7b938a974d117c928b4601ccab8d3d065c979e6b6e2062ab04519265f3fad92	146	versions/pam3/patent-simulation	archive/pam3-patent-simulation	Initial Python and RTL patent simulation
+PAM3_FPGA_Implementation.zip	9a2cd3339c04972b32c838959868c94cbdfd6f856ddfed3b810d33661ef9344c	126	versions/pam3/fpga	archive/pam3-fpga	FPGA RTL, synthesis and verification
+PAM3_Professor_Ready.zip	2462b43c752853db6ef2143002881a4d895542d5770b6527e16be9f9489cb090	103	versions/pam3/professor-package	archive/pam3-professor-package	Original simulation and FPGA handover
+PAM3_MATLAB_Simulink.zip	0be18b0a81b0b6c1109d20db817e4b3cb34e8a67d5530f19f189261129b6559e	59	versions/pam3/matlab-simulink	archive/pam3-matlab-simulink	MATLAB and standalone Simulink detector
+DPC_PAM3_Comparison.zip	c8f548a081276eca010ddeff94f55f5d8b7f495f42ee8d36c7ada7be310170bb	76	versions/dpc/initial-comparison	archive/dpc-initial-comparison	Early DPC comparison using the same input
+DPC_Control_Quality.zip	ac6ae55c83d378b99e39d6077aba695b268cc1ef3dda96ad77845e50c12ea1d6	47	versions/dpc/control-quality	archive/dpc-control-quality	Control quality and reference fixtures
+DPC_Ternary_Professor.zip	4a8b0d974510042d40970a6c7f85312b6e5a146705e5077477ea89c4043dc147	50	versions/dpc/ternary-table	archive/dpc-ternary-table	Nine-state ternary table and validation
+DPC_Ternary_Noise_Study.zip	75c224e36fb47fb085874e5db418910dab3bbf3233768fde4baa8913324b6526	75	versions/dpc/ternary-noise	archive/dpc-ternary-noise	Ternary controller noise study
+Hysteresis_PAM3_Simple_MATLAB.zip	f25f8e1fbb92337b109520817be2dda55ce8542e908f31a96aafb75c41533b62	36	versions/comparison/matlab	archive/comparison-matlab	Standalone hysteresis vs. PAM3 in MATLAB
+Hysteresis_PAM3_Simulink.zip	93ca87c27a6e8bf12f9e74a9c1fa99be23e246ed9f31346dd1ac6b8b960dfbfb	53	versions/comparison/simulink	archive/comparison-simulink	Standalone hysteresis vs. PAM3 in Simulink
+DPC_PAM3_Mapping.zip	318c458901257e43f331fe2d3a9ec1fae913c2ab842a147a06788b79c055c370	21	versions/dpc/professor-mapping	archive/dpc-professor-mapping	Mapping onto the professor’s Simulink model
+DPC_PAM3_Improved.zip	aa24476f01e74dcb15129edf97a7a305fcc62f996a841cd8e9d89171aa52c32b	73	versions/dpc/stage-2	archive/dpc-stage-2	Improved controller and Stage 2 experiments
+DPC_PAM3_Stage3.zip	2871afcfc591e6efeb835bcbdffa1c1c012a6c3964c75d68ab39d2a72b2728d3	113	versions/dpc/stage-3-4	archive/dpc-stage-3-4	Stage 3 and Stage 4, including binary rematch
+Stage_4_Reproduction_Package.zip	d492862f0f8a085d99b93cb8ad68e5cc5a1a9f1de62fc2006668ba1de6c78636	12	versions/research/ternary-stage-4	archive/research-ternary-stage-4	Separate ternary detector reproducibility study
+Ternary_Detection_Research_Stage8.zip	87dc04b1fcb7eda1836323f92407e5ed1121a5c5bf49b8cd52fa10bdab1accd8	15	versions/research/ternary-stage-8	archive/research-ternary-stage-8	Separate ternary detector Stage 8 study
