@@ -1,0 +1,10 @@
+{
+  "offline": true,
+  "controls": true,
+  "table": true,
+  "live_dom": true,
+  "canvas_mocked": true,
+  "actual_browser_rendered": false,
+  "errors": [],
+  "canvas_draw_calls": 35700
+}

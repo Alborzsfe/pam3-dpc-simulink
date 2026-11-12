@@ -1,0 +1,3 @@
+VCD info: dumpfile /workspace/scratch/f9bc06d8d963/output/PAM3_Patent_Simulation/results/hdl/dual_channel.vcd opened for output.
+PASS samples_per_channel=9242 dc=0 symbols_A=770 symbols_B=770
+/workspace/scratch/f9bc06d8d963/output/PAM3_Patent_Simulation/rtl/tb_dual.sv:68: $finish called at 97890000 (1ps)
