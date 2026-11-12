@@ -1,0 +1,66 @@
+{
+  "source_zip": "PAM3_MATLAB_Simulink(1).zip",
+  "source_zip_sha256": "0be18b0a81b0b6c1109d20db817e4b3cb34e8a67d5530f19f189261129b6559e",
+  "files": [
+    {
+      "source": "PAM3_Simulink/matlab/pam3_config.m",
+      "copy": "PAM3_original/pam3_config.m",
+      "sha256": "a029637f5d287c2eb75005086a3188aa36b497dc53112f764cc713a3c160d85e",
+      "byte_identical": true
+    },
+    {
+      "source": "PAM3_Simulink/matlab/pam3_decode.m",
+      "copy": "PAM3_original/pam3_decode.m",
+      "sha256": "7026e02a63289135aea5877efdb3a452e59143c0248e4e623209bb486c799af3",
+      "byte_identical": true
+    },
+    {
+      "source": "PAM3_Simulink/matlab/pam3_initial_state.m",
+      "copy": "PAM3_original/pam3_initial_state.m",
+      "sha256": "01e819518bde6061a5921cc467eaf65651582b81c1b30e8dc3d65b12834527ac",
+      "byte_identical": true
+    },
+    {
+      "source": "PAM3_Simulink/matlab/pam3_layout.m",
+      "copy": "PAM3_original/pam3_layout.m",
+      "sha256": "cf10f0869489fb5af0440d8c62a63d2d29294345a60d8cb5aefad6de3192c2e4",
+      "byte_identical": true
+    },
+    {
+      "source": "PAM3_Simulink/matlab/pam3_step.m",
+      "copy": "PAM3_original/pam3_step.m",
+      "sha256": "0d39c697c5533cb9b3d642ff3c9f0d62ed5ff345c49651aae1381f9446815dcd",
+      "byte_identical": true
+    },
+    {
+      "source": "PAM3_Simulink/matlab/pam3_trace_decode.m",
+      "copy": "PAM3_original/pam3_trace_decode.m",
+      "sha256": "3668a734c224fd7094175bcc0c2d0c72cefac71eb664c5ee749ec3e168296a06",
+      "byte_identical": true
+    },
+    {
+      "source": "PAM3_Simulink/matlab/pam3_validate_config.m",
+      "copy": "PAM3_original/pam3_validate_config.m",
+      "sha256": "fbf32d5ffe8d2f66d6f237be79725f77ed1c181a8bd89f65aab1f02d2e2262ba",
+      "byte_identical": true
+    },
+    {
+      "source": "PAM3_Simulink/python_reference/__init__.py",
+      "copy": "PAM3_original/python_reference/__init__.py",
+      "sha256": "1fefc62e63984b57342a6a8bd56728d8cb93fe21590d602b1e02809625c04906",
+      "byte_identical": true
+    },
+    {
+      "source": "PAM3_Simulink/python_reference/model.py",
+      "copy": "PAM3_original/python_reference/model.py",
+      "sha256": "b7ed854f62162b0dea91710ee291d4f175d9d25c8bdf8260c5c61e5422c855b3",
+      "byte_identical": true
+    },
+    {
+      "source": "PAM3_Simulink/matlab/pam3_sfun.m",
+      "copy": "PAM3_original/pam3_sfun.m",
+      "sha256": "246441cfc6caf22fa66534482dc95a120cdcf451109b37d723185f36d6969a80",
+      "byte_identical": true
+    }
+  ]
+}

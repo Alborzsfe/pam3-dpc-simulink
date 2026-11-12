@@ -1,0 +1,26 @@
+{
+  "constant_positive_start": {
+    "samples": 100,
+    "raw_mismatch_ticks": 100,
+    "last_raw": 0,
+    "last_reference": 1
+  },
+  "constant_negative_start": {
+    "samples": 100,
+    "raw_mismatch_ticks": 100,
+    "last_raw": 0,
+    "last_reference": -1
+  },
+  "positive_small_ripple": {
+    "samples": 110,
+    "raw_mismatch_ticks": 49,
+    "last_raw": 1,
+    "last_reference": 1
+  },
+  "falling_still_positive": {
+    "samples": 61,
+    "raw_mismatch_ticks": 50,
+    "last_raw": 0,
+    "last_reference": 1
+  }
+}

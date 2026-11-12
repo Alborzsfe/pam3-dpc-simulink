@@ -1,0 +1,24 @@
+{
+  "repair": "Idempotent logging connections; re-resolve endpoints after graph mutation; repair destination leaf only",
+  "controller_and_source_model_unchanged": [
+    "legacy_template.m",
+    "delay_template.m",
+    "fast_template.m",
+    "adc_template.m",
+    "raw_template.m",
+    "baseline_template.m",
+    "predictive_template.m",
+    "pam3_power_step.m",
+    "pam3_power_predict.m",
+    "pam3_study_config.m",
+    "DPC_Three_Level.slx"
+  ],
+  "user_reported_pass": "100011 core samples, 4000 whole-controller ticks, predictor bounds/pass-through",
+  "new_native_regression_test": "VALIDATE_STUDY_CONNECTIONS.m (supplied, not executed here)",
+  "MATLAB_Simulink_available_here": false,
+  "syntax_check": "PASS: MISS_HIT parsed 30 files, MATLAB 2022a grammar. This is not a native Simulink execution.",
+  "references": [
+    "https://www.mathworks.com/help/simulink/slref/add_line.html",
+    "https://www.mathworks.com/help/simulink/slref/delete_line.html"
+  ]
+}
