@@ -1,0 +1,13 @@
+{
+  "source_original_unchanged": true,
+  "native_source_block_paths_exist": true,
+  "parameter_initialization_before_block_creation": true,
+  "input_format": "two-column double array",
+  "explicit_final_value_hold": true,
+  "preflight_comparison": "index after clock/count validation",
+  "actual_gate_path_verified_from_source": true,
+  "simulink_executed": false,
+  "revision": 2,
+  "binary_reference_threshold_equality": "inclusive: on >= +1, off <= -1",
+  "native_revision_2_executed": false
+}
