@@ -1,0 +1,9 @@
+PASS capture preparation: causal hold, duplicate timestamps, scalar/vector single-timestamp logs.
+    passed = 1
+    duplicate_timestamps_keep_last = 1
+    zero_order_hold_is_causal = 1
+    single_timestamp_scalar_and_vector_supported = 1
+    late_single_timestamp_is_causal = 1
+    missing_duration_rejected = 1
+    converter_executed = 0
+    runtime = 8.4.0

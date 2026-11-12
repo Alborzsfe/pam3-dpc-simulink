@@ -1,0 +1,322 @@
+{
+  "model": "dpc_same_input_comparison",
+  "authoring": "OPC/XML; native builder authoritative",
+  "blocks": [
+    {
+      "sid": "1",
+      "name": "Error_P",
+      "kind": "FromWorkspace",
+      "parameters": {
+        "VariableName": "dpc_error_P",
+        "SampleTime": "dpc_replay_cfg.sample_time",
+        "Interpolate": "off",
+        "OutputAfterFinalValue": "Holding final value"
+      }
+    },
+    {
+      "sid": "2",
+      "name": "ADC_P",
+      "kind": "FromWorkspace",
+      "parameters": {
+        "VariableName": "dpc_adc_P",
+        "SampleTime": "dpc_replay_cfg.sample_time",
+        "Interpolate": "off",
+        "OutputAfterFinalValue": "Holding final value"
+      }
+    },
+    {
+      "sid": "3",
+      "name": "Binary_P",
+      "kind": "Relay",
+      "parameters": {
+        "OnSwitchValue": 1,
+        "OffSwitchValue": -1,
+        "OnOutputValue": 1,
+        "OffOutputValue": 0,
+        "SampleTime": "dpc_replay_cfg.sample_time"
+      }
+    },
+    {
+      "sid": "4",
+      "name": "Control_Ternary_P",
+      "kind": "SubSystem",
+      "parameters": {}
+    },
+    {
+      "sid": "5",
+      "name": "Error",
+      "kind": "Inport",
+      "parameters": {
+        "Port": 1
+      }
+    },
+    {
+      "sid": "6",
+      "name": "Center_Error",
+      "kind": "Bias",
+      "parameters": {
+        "Bias": 0
+      }
+    },
+    {
+      "sid": "7",
+      "name": "Reverse_Sign",
+      "kind": "Gain",
+      "parameters": {
+        "Gain": -1
+      }
+    },
+    {
+      "sid": "8",
+      "name": "Positive_State",
+      "kind": "Relay",
+      "parameters": {
+        "OnSwitchValue": 1,
+        "OffSwitchValue": 0.5,
+        "OnOutputValue": 1,
+        "OffOutputValue": 0,
+        "SampleTime": "dpc_replay_cfg.sample_time"
+      }
+    },
+    {
+      "sid": "9",
+      "name": "Negative_State",
+      "kind": "Relay",
+      "parameters": {
+        "OnSwitchValue": 1,
+        "OffSwitchValue": 0.5,
+        "OnOutputValue": 1,
+        "OffOutputValue": 0,
+        "SampleTime": "dpc_replay_cfg.sample_time"
+      }
+    },
+    {
+      "sid": "10",
+      "name": "Three_Level_Output",
+      "kind": "Sum",
+      "parameters": {
+        "Inputs": "+-"
+      }
+    },
+    {
+      "sid": "11",
+      "name": "Decision",
+      "kind": "Outport",
+      "parameters": {
+        "Port": 1
+      }
+    },
+    {
+      "sid": "12",
+      "name": "Patent_P",
+      "kind": "M-S-Function",
+      "parameters": {
+        "FunctionName": "pam3_sfun",
+        "Parameters": "dpc_patent_cfg",
+        "DisplayMFileStacktrace": "on"
+      }
+    },
+    {
+      "sid": "13",
+      "name": "Binary_P_Log",
+      "kind": "ToWorkspace",
+      "parameters": {
+        "VariableName": "dpc_binary_P",
+        "SaveFormat": "Structure With Time",
+        "MaxDataPoints": "inf",
+        "Decimation": 1,
+        "SampleTime": -1
+      }
+    },
+    {
+      "sid": "14",
+      "name": "Ternary_P_Log",
+      "kind": "ToWorkspace",
+      "parameters": {
+        "VariableName": "dpc_ternary_P",
+        "SaveFormat": "Structure With Time",
+        "MaxDataPoints": "inf",
+        "Decimation": 1,
+        "SampleTime": -1
+      }
+    },
+    {
+      "sid": "15",
+      "name": "Patent_P_Log",
+      "kind": "ToWorkspace",
+      "parameters": {
+        "VariableName": "dpc_patent_P",
+        "SaveFormat": "Structure With Time",
+        "MaxDataPoints": "inf",
+        "Decimation": 1,
+        "SampleTime": -1
+      }
+    },
+    {
+      "sid": "16",
+      "name": "Error_Q",
+      "kind": "FromWorkspace",
+      "parameters": {
+        "VariableName": "dpc_error_Q",
+        "SampleTime": "dpc_replay_cfg.sample_time",
+        "Interpolate": "off",
+        "OutputAfterFinalValue": "Holding final value"
+      }
+    },
+    {
+      "sid": "17",
+      "name": "ADC_Q",
+      "kind": "FromWorkspace",
+      "parameters": {
+        "VariableName": "dpc_adc_Q",
+        "SampleTime": "dpc_replay_cfg.sample_time",
+        "Interpolate": "off",
+        "OutputAfterFinalValue": "Holding final value"
+      }
+    },
+    {
+      "sid": "18",
+      "name": "Binary_Q",
+      "kind": "Relay",
+      "parameters": {
+        "OnSwitchValue": 1,
+        "OffSwitchValue": -1,
+        "OnOutputValue": 1,
+        "OffOutputValue": 0,
+        "SampleTime": "dpc_replay_cfg.sample_time"
+      }
+    },
+    {
+      "sid": "19",
+      "name": "Control_Ternary_Q",
+      "kind": "SubSystem",
+      "parameters": {}
+    },
+    {
+      "sid": "20",
+      "name": "Error",
+      "kind": "Inport",
+      "parameters": {
+        "Port": 1
+      }
+    },
+    {
+      "sid": "21",
+      "name": "Center_Error",
+      "kind": "Bias",
+      "parameters": {
+        "Bias": 0
+      }
+    },
+    {
+      "sid": "22",
+      "name": "Reverse_Sign",
+      "kind": "Gain",
+      "parameters": {
+        "Gain": -1
+      }
+    },
+    {
+      "sid": "23",
+      "name": "Positive_State",
+      "kind": "Relay",
+      "parameters": {
+        "OnSwitchValue": 1,
+        "OffSwitchValue": 0.5,
+        "OnOutputValue": 1,
+        "OffOutputValue": 0,
+        "SampleTime": "dpc_replay_cfg.sample_time"
+      }
+    },
+    {
+      "sid": "24",
+      "name": "Negative_State",
+      "kind": "Relay",
+      "parameters": {
+        "OnSwitchValue": 1,
+        "OffSwitchValue": 0.5,
+        "OnOutputValue": 1,
+        "OffOutputValue": 0,
+        "SampleTime": "dpc_replay_cfg.sample_time"
+      }
+    },
+    {
+      "sid": "25",
+      "name": "Three_Level_Output",
+      "kind": "Sum",
+      "parameters": {
+        "Inputs": "+-"
+      }
+    },
+    {
+      "sid": "26",
+      "name": "Decision",
+      "kind": "Outport",
+      "parameters": {
+        "Port": 1
+      }
+    },
+    {
+      "sid": "27",
+      "name": "Patent_Q",
+      "kind": "M-S-Function",
+      "parameters": {
+        "FunctionName": "pam3_sfun",
+        "Parameters": "dpc_patent_cfg",
+        "DisplayMFileStacktrace": "on"
+      }
+    },
+    {
+      "sid": "28",
+      "name": "Binary_Q_Log",
+      "kind": "ToWorkspace",
+      "parameters": {
+        "VariableName": "dpc_binary_Q",
+        "SaveFormat": "Structure With Time",
+        "MaxDataPoints": "inf",
+        "Decimation": 1,
+        "SampleTime": -1
+      }
+    },
+    {
+      "sid": "29",
+      "name": "Ternary_Q_Log",
+      "kind": "ToWorkspace",
+      "parameters": {
+        "VariableName": "dpc_ternary_Q",
+        "SaveFormat": "Structure With Time",
+        "MaxDataPoints": "inf",
+        "Decimation": 1,
+        "SampleTime": -1
+      }
+    },
+    {
+      "sid": "30",
+      "name": "Patent_Q_Log",
+      "kind": "ToWorkspace",
+      "parameters": {
+        "VariableName": "dpc_patent_Q",
+        "SaveFormat": "Structure With Time",
+        "MaxDataPoints": "inf",
+        "Decimation": 1,
+        "SampleTime": -1
+      }
+    },
+    {
+      "sid": "31",
+      "name": "Capture_Command",
+      "kind": "FromWorkspace",
+      "parameters": {
+        "VariableName": "dpc_command",
+        "SampleTime": "dpc_replay_cfg.sample_time",
+        "Interpolate": "off",
+        "OutputAfterFinalValue": "Holding final value"
+      }
+    }
+  ],
+  "subsystems": 2,
+  "zip_crc_ok": true,
+  "system_references_ok": true,
+  "matlab_loaded": false,
+  "simulink_executed": false
+}
